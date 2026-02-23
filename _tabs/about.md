@@ -22,7 +22,7 @@ Nope. Probably not.
 ## Just whine for a bit
 I always think that I'm pretty skillful in lots of data-related tasks. Although in reality, I'm just another mediocre in this field. I'd love working with data: getting some contexts out of their abstractness, building a useless utterly-complex machine learning model just for fun, copy-pasting lines of codes into some projects, and anything else in between. 
 
-It's another boring afternoon. Sitting on a chair, in a damp stuffy bedroom. Overthinking everything, keep replanning things, without any actual execution. 
+It's another boring afternoon. Sitting on a chair, in a damp stuffy bedroom. Overthinking everything, keep replanning things, without any actual execution. Like seriously, what else could i do, dude? 
 
 *Sigh*. I always believe that things will eventually get better, since that what life is all about. One even said that we just had to keep learning, and pushing in any kind of situation.
 
