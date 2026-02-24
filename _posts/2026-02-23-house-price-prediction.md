@@ -11,6 +11,7 @@ tags:
 description: End-to-end ML project: regression modeling using XGBoost on house prices with Streamlit deployment.
 media_subpath: "/assets/img/house-price/"
 ---
+
 <!-- [page.media_subpath/]file.ext -->
 
 Mulai dari mana baiknya? Ah, iya, tentu saja sebuah klarifikasi! Berhubung kemampuan bahasa Inggris saya sedang dalam tahap perbaikan, maka, usahlah kita ubah menggunakan bahasa sehari-hari, yakni, Indonesia. Alasan lain, versi bahasa Inggris dapat dilihat lewat pranala berikut ini: [https://github.com/irdazh/house-price-prediction](https://github.com/irdazh/house-price-prediction), pada bagian README. Kurang lebihnya, versi ini merupakan saduran dari versi bahasa Inggris tersebut.
