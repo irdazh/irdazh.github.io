@@ -1,20 +1,12 @@
 ---
 layout: post
 title: House Price Prediction
-date: 2026-02-23 13:57 +0700
-categories:
-- DS Projects
-tags:
-- regression
-- house price
-- xgboost
-description: End-to-end ML project: regression modeling using XGBoost on house prices with Streamlit deployment.
-media_subpath: "/assets/img/house-price/"
+date: 2026-02-24 15:12 +0700
+categories: [DS Projects]
+tags: [regression, xgboost, house price, streamlit]
+description: End-to-end ML project: regression modeling using XGBoost on house prices with streamlith deployment. 
 ---
-
-<!-- [page.media_subpath/]file.ext -->
-
-Mulai dari mana baiknya? Ah, iya, tentu saja sebuah klarifikasi! Berhubung kemampuan bahasa Inggris saya sedang dalam tahap perbaikan, maka, usahlah kita ubah menggunakan bahasa sehari-hari, yakni, Indonesia. Alasan lain, versi bahasa Inggris dapat dilihat lewat pranala berikut ini: [https://github.com/irdazh/house-price-prediction](https://github.com/irdazh/house-price-prediction), pada bagian README. Kurang lebihnya, versi ini merupakan saduran dari versi bahasa Inggris tersebut.
+Mulai dari mana baiknya? Ah, iya, tentu saja sebuah klarifikasi! Berhubung kemampuan bahasa Inggris saya sedang dalam tahap perbaikan, maka, usahlah kita ubah menggunakan bahasa sehari-hari, yakni, Indonesia. Alasan lain, versi bahasa Inggris dapat dilihat lewat pranala berikut ini: [https://github.com/irdazh/house-price-prediction](https://github.com/irdazh/house-price-prediction), pada bagian README. Kurang lebihnya, versi ini merupakan saduran dari versi bahasa Inggris tersebut. 
 
 # Permasalahan dan Dataset
 
