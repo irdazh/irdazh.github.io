@@ -90,4 +90,22 @@ Aplikasi web tersebut memiliki beberapa fitur, mencakup: laman masukan detail ru
 - Deployment: Streamlit Cloud
 
 # Simpulan & Refleksi
-1. 
+Petuah bilang, lebih baik terlambat daripada tidak sama sekali. Lantas, apakah tunda-menunda masuk ke dalamnya? Toh, tetap dilakukan, meski membuat terseok hingga akhir.
+
+*I really wanna blabber about projects I did and competitions I had won in college. Yes, it all mostly was about data analysis and modeling to this kind of level. Yet. It took me a really long time to finish this project. Slowly. Full of boredom. It yet just shows how little I know about this field. I hate it. Stuck at this level, and slowly getting worse and worse. Without any plan or whatsoever. So what's next?*
+
+Mungkin begitulah, tetapi tetap saja, harusnya ada banyak sekali hal baru yang dipelajari, kan?
+1. Lokal: hampir seluruh proyek yang saya kerjakan saat masa kuliah menggunakan kaggle, colab, atau platform daring lainnya -- maka, ini sebuah kebaruan; 
+2. Git & GitHub: masih level dasar, tapi paling tidak, dapat paham garis besarnya. 
+3. Streamlit: kalau ini benar-benar baru, meskipun tentu saja hanyalah *vibe coding* dengan bantuan bot LLM.
+
+Banyak sekali, katanya, *smirk*. Lantas, untuk ke depan?
+1. Dari apa yang saya pelajari ketika *probation* sekian minggu, satu hal penting yang melekat adalah intensi, atau niatan. Maka, bagian permasalahan awal menjadi titik pusat atas segalanya -- simpan-simpanlah dulu distraksi semenarik apapun itu. 
+2. Lantas, pada tahapan eksplorasi data, awali dengan mencatat asumsi yang melekat pada data. Buatlah batasan pada simpulan nantinya, yang selaras dengan data tersebut.
+3. Selanjutnya, tampilkan ringkasan data dan buat visualisasi umum secara keseluruhan menggunakan templat, sebelum masuk ke visualisasi khusus hanya untuk fitur-fitur yang secara teoretis penting dan relevan.
+4. Bisa gunakan derajat korelasi, asosiasi, atau mutual information (tidak disarankan), meski tetap saya sarankan untuk fokus ke informasi visual.
+5. Tentukan metrik evaluasi yang sederhana, makin sedikit makin baik. 
+6. Pada tahapan preprocess, sesuaikan dengan asumsi dan tujuan utama proyek. 
+7. Selanjutnya, lakukan saja seperti biasa. 
+8. Tidak perlu melakukan analisis komplet, sesuaikan saja dengan tujuan proyek. 
+9. *Are hyperparameter tuning and feature engineering that useless?*
