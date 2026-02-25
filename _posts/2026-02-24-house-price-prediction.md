@@ -4,24 +4,42 @@ title: House Price Prediction
 date: 2026-02-24 15:12 +0700
 categories: [DS Projects]
 tags: [regression, xgboost, house price, streamlit]
-description: "End-to-end ML project: regression modeling using XGBoost on house prices with streamlith deployment." 
+description: "End-to-end ML project: regression modeling using XGBoost on house prices with Streamlit deployment." 
+media_subpath: /assets/img/house-price
 ---
 
-Mulai dari mana baiknya? Ah, iya, tentu saja sebuah klarifikasi! Berhubung kemampuan bahasa Inggris saya sedang dalam tahap perbaikan, maka, usahlah kita ubah menggunakan bahasa sehari-hari, yakni, Indonesia. Alasan lain, versi bahasa Inggris dapat dilihat lewat pranala berikut ini: [https://github.com/irdazh/house-price-prediction](https://github.com/irdazh/house-price-prediction), pada bagian README. Kurang lebihnya, versi ini merupakan saduran dari versi bahasa Inggris tersebut. 
+Mulai dari mana baiknya? Ah, iya, tentu saja sebuah klarifikasi!
+
+Berhubung kemampuan bahasa Inggris saya sedang dalam tahap perbaikan, maka, usahlah kita ubah menggunakan bahasa sehari-hari, yakni, Indonesia. Alasan lain, versi bahasa Inggris dapat dilihat lewat pranala berikut ini: [https://github.com/irdazh/house-price-prediction](https://github.com/irdazh/house-price-prediction), pada bagian README. Kurang lebihnya, versi ini merupakan saduran dari versi bahasa Inggris tersebut. 
 
 # Permasalahan dan Dataset
 
-Pada proyek kali ini, saya buat model machine learning untuk memprediksi harga rumah. Saya buat beberapa model machine learning, mencakup model linear serta model pepohonan (tree-based model), membandingkannya, lantas memilih satu model terbaik untuk ditempatkan ke dalam aplikasi web ringan (model deployment) menggunakan Streamlit. 
+Pada proyek kali ini, saya buat model machine learning untuk memprediksi harga rumah. Saya buat beberapa model machine learning, mencakup model linear serta model pepohonan (tree-based model), membandingkannya, lantas memilih satu model terbaik untuk ditempatkan ke dalam aplikasi web ringan (model deployment) menggunakan Streamlit.
 
 Proyek ini menggunakan Ames Housing Dataset dari kompetisi di platform Kaggle, yang tentu saja tidak relevan dengan harga rumah di Indonesia. Data tersebut terdiri atas 1460 baris, dengan target berupa harga penjualan rumah (SalePrice) serta 79 fitur dengan beragam jenis, yang mencakup numerik, ordinal, dan nominal. Beberapa contoh dari fitur tersebut adalah kualitas material rumah (OverallQual), wilayah perumahan (Neighborhood), tipe rumah (MSSubClass), tahun konstruksi (YearBuilt), dan luas bangunan (GrLivArea).
 
 # EDA (Eksplorasi Data)
-Dari statistik deskriptif dan visualisasi data yang telah saya buat, didapatkan beberapa simpulan sebagai berikut: 
-1. Variabel target, yaitu harga penjualan rumah (SalePrice), selayaknya variabel perekonomian lainnya, memiliki distribusi yang cenderung menceng kanan (right-skewed).  Mayoritas rumah memiliki harga standar pada rentang 100 ribu hingga 300 ribu, tetapi ada sebagian kecil rumah yang mencapai harga pada rentang 500 ribu hingga 700 ribu. 
-2. Dari heatmap tersebut, terdapat data yang hilang (missing values) pada 19 fitur, baik sistematis ataupun acak. Dalam tahap pemodelan nantinya, fitur dengan data yang hilang berjumlah masif, lebih dari 80 persen, akan dibuang dari model. Sedangkan sisanya, akan dilakukan imputasi. 
-3. Heatmap tersebut menunjukkan Korelasi Rank Spearman untuk 14 fitur paling berkorelasi dengan variabel target. Dapat dilihat bahwa hanya beberapa fitur yang berkorelasi sangat kuat dengan variabel target. Di lain sisi, beberapa fitur malah berkorelasi kuat satu dengan yang lainnya. 
-4. Berikutnya ditampilkan boxenplots dari variabel target SalePrice untuk seluruh kelas dari 4 fitur terpilih, yaitu OverallQual, Neighborhood, MSSubClass, dan FullBath. Dari plot pertama, dapat dilihat bahwa bahwa meningkatnya OveralQual dibarengi dengan meningkatnya nilai dari SalePrice. Kedua, wilayah perumahan IDOTRR, MItchel, dan StoneBr terlihat memiliki median harga rumah tertinggi, sedangkan median harga rumah terendah ada di wilayah Sawyer; hal ini menunjukkan adanya korelasi antara harga rumah dengan wilayah perumahan. Ketiga, tipe rumah dengan kode 60 (rumah 2 lantai tipe baru) dan kode 120 (rumah 1 lantai di kawasan terpadu tipe baru) cenderung memiliki median harga rumah yang tinggi, sedangkan rumah dengan kode 30 (rumah 1 lantai tipe lawas) memiliki median harga paling rendah; hal ini juga menunjukkan adanya korelasi antara harga rumah dan tipe rumah. Terakhir, jumlah kamar mandi lengkap (?) juga terlihat berkorelasi dengan harga rumah.
-5. Untuk yang satu ini, sila lakukan interpretasi sendiri. Bukan suatu hal yang susah, saya kira. 
+Dari statistik deskriptif dan visualisasi data yang telah saya buat, didapatkan beberapa simpulan, yang saya terakan di bawah. 
+
+![spd](/sale-price-distribution.png){: h="30" .normal}
+
+Variabel target, yaitu harga penjualan rumah (SalePrice), selayaknya variabel perekonomian lainnya, memiliki distribusi yang cenderung menceng kanan (right-skewed).  Mayoritas rumah memiliki harga standar pada rentang 100 ribu hingga 300 ribu, tetapi ada sebagian kecil rumah yang mencapai harga pada rentang 500 ribu hingga 700 ribu.
+
+![mvh](/missing-value-heatmap.png){: h="30" .left}
+
+Dari heatmap tersebut, terdapat data yang hilang (missing values) pada 19 fitur, baik sistematis ataupun acak. Dalam tahap pemodelan nantinya, fitur dengan data yang hilang berjumlah masif, lebih dari 80 persen, akan dibuang dari model. Sedangkan sisanya, akan dilakukan imputasi. 
+
+![frk](/feature-rank-correlation.png){: h="30" .right}
+
+Heatmap tersebut menunjukkan Korelasi Rank Spearman untuk 14 fitur paling berkorelasi dengan variabel target. Dapat dilihat bahwa hanya beberapa fitur yang berkorelasi sangat kuat dengan variabel target. Di lain sisi, beberapa fitur malah berkorelasi kuat satu dengan yang lainnya. 
+
+![cb](/categorical-boxenplot.png){: h="30" .normal}
+
+Berikutnya ditampilkan boxenplot dari variabel target SalePrice untuk seluruh kelas dari 4 fitur terpilih, yaitu OverallQual, Neighborhood, MSSubClass, dan FullBath. Dari plot pertama, dapat dilihat bahwa bahwa meningkatnya OveralQual dibarengi dengan meningkatnya nilai dari SalePrice. Kedua, wilayah perumahan IDOTRR, MItchel, dan StoneBr terlihat memiliki median harga rumah tertinggi, sedangkan median harga rumah terendah ada di wilayah Sawyer; hal ini menunjukkan adanya korelasi antara harga rumah dengan wilayah perumahan. Ketiga, tipe rumah dengan kode 60 (rumah 2 lantai tipe baru) dan kode 120 (rumah 1 lantai di kawasan terpadu tipe baru) cenderung memiliki median harga rumah yang tinggi, sedangkan rumah dengan kode 30 (rumah 1 lantai tipe lawas) memiliki median harga paling rendah; hal ini juga menunjukkan adanya korelasi antara harga rumah dan tipe rumah. Terakhir, jumlah kamar mandi lengkap (?) juga terlihat berkorelasi dengan harga rumah.
+
+![ns](/numerical-scatterplot.png){: h="30" .normal}
+
+Untuk keempat scatterplot di atas, sila lakukan interpretasi sendiri. Bukan suatu hal yang susah, kan?  
 
 # Pemodelan dan Komparasi
 
@@ -47,4 +65,12 @@ Sepertinya, analisis mendalam terhadap fitur-fitur tersebut akan sangat amat men
 
 # Aplikasi Web
 
+# Tumpukan Teknologi✨
+- Language: Python
+- Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost, lightgbm, shap (opsional)
+- Dashboard: Streamlit
+- Version Control: Git, GitHub
+- Deployment: Streamlit Cloud
+
 # Simpulan & Refleksi
+1. 
