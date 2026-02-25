@@ -45,19 +45,25 @@ Untuk keempat scatterplot di atas, sila lakukan interpretasi sendiri. Bukan suat
 
 Sebelum masuk ke pemodelan, pada tahap preprocessing, dilakukan split data sebanyak 80 persen untuk data latih dan 20 persen sisanya untuk data uji. Pada data yang hilang, dilakukan imputasi menggunakan kelas baru (None) untuk fitur nominal, serta nilai median untuk fitur numerik dan ordinal. Saya lakukan standardisasi menggunakan StandardScaler untuk fitur numerik (hanya dilakukan untuk model dasar) serta kodifikasi menggunakan OrdinalEncoder untuk fitur nominal. 
 
-Saya gunakan 2 metrik evaluasi dalam proyek kali ini, MSLE dan RMSE. MSLE (root mean squared log error) digunakan untuk memilih model terbaik, yang cocok digunakan untuk variabel target yang memiliki distribusi mendekati log normal (?). Evaluasi dilakukan dengan menggunakan validasi silang 5-fold pada data uji. Hanya saja, untuk interpretasi model, digunakan RMSE (root mean squared error) digunakan untuk memudahkan interpretasi galat model. Aneh? Memang; saya sendiri juga berpikir semacam itu. Mungkin lain kali, harusnya gunakan satu metrik evaluasi saja, menyesuaikan tujuan dari dibuatnya model ini. 
+Saya gunakan 2 metrik evaluasi dalam proyek kali ini, MSLE dan RMSE. MSLE (root mean squared log error) digunakan untuk memilih model terbaik, yang cocok digunakan untuk variabel target yang memiliki distribusi mendekati log normal (?). Evaluasi dilakukan dengan menggunakan validasi silang 5-fold pada data uji. Hanya saja, untuk interpretasi model, digunakan RMSE (root mean squared error) digunakan untuk memudahkan interpretasi galat model. Aneh? Memang; saya sendiri juga berpikir semacam itu. Mungkin lain kali, harusnya gunakan satu metrik evaluasi saja: gunakan satu metrik yang simpel atau  menyesuaikan tujuan awal pemodelan. 
 
 Pada tahap pemodelan ini, banyak eksperimen yang saya lakukan. 
 
-Pertama, untuk pemodelan dasar, dibentuk 4 model linear, 1 KNN, serta 4 model pepohonan. Selain itu, ditambahkan pula beberapa fitur baru (lewat feature engineering) yang pernah saya dapatkan dari platform belajar Kaggle. Meski sayang sekali, keempat fitur baru yang saya buat tidak lebih berguna dari fitur-fitur lainnya. Hasilnya mungkin dapat ditebak, model pepohonan memiliki performa terbaik, diikuti dengan model linear, dan model dengan performa terburuk adalah model KNN. 
+![mbc](model-basic-comparison.png)
+_Basic Model Comparison_
 
-Setelahnya, dilakukan pemodelan lebih lanjut pada model pepohonan, menggunakan hyperparameter tuning untuk mendapatkan model dengan konfigurasi terbaik dengan metrik evaluasi MSLE paling rendah. Long story short (karena penjelasan rumit yang tidak diperlukan), didapatkan model terbaik berupa XGBoost dengan parameter tertentu. Meski sebetulnya, peningkatan performa yang ada sangat amat kecil dan terlihat tidak signifikan, tapi tak apalah, tetap saya gunakan sebagai model terbaik untuk saat. 
+Pertama, untuk pemodelan dasar, dibentuk 4 model linear, 1 KNN, serta 4 model pepohonan. Selain itu, ditambahkan pula beberapa fitur baru (lewat feature engineering) yang pernah saya dapatkan dari platform belajar Kaggle. Meski sayang sekali, keempat fitur baru yang saya buat tidak lebih berguna dari fitur-fitur lainnya. Hasilnya mungkin dapat ditebak, model pepohonan memiliki performa terbaik, diikuti dengan model linear, dan model dengan performa terburuk adalah model KNN, seperti yang dapat dilihat pada gambar di atas. 
+
+Setelahnya, dilakukan pemodelan lebih lanjut pada model pepohonan, menggunakan hyperparameter tuning untuk mendapatkan model dengan konfigurasi terbaik dengan metrik evaluasi MSLE paling rendah. Singkat cerita (karena penjelasan rumit yang tidak diperlukan), didapatkan model terbaik berupa XGBoost dengan parameter tertentu. Meski sebetulnya, peningkatan performa yang ada sangat amat kecil dan terlihat tidak signifikan, tapi tak apalah, tetap saya gunakan sebagai model terbaik untuk saat. 
 
 Sebagai tambahan, sebetulnya, dilakukan juga pemodelan dengan menggunakan hanya sebagian fitur berdasarkan nilai dari mutual information. Tentu saja model ini memiliki performa di bawah model dengan seluruh fitur. Hanya saja, meski model ini bukanlah model terbaik, pendekatan dengan menggunakan sebagian fitur cocok digunakan untuk kondisi lain ke depannya. 
 
 # Model Terbaik dan Interpretasinya
 
 Model terbaik didapat dengan menggunakan algoritma XGBoost dengan hyperparameter tuning. Model tersebut memberikan nilai MSLE terendah sebesar 0.138 dan RMSE sebesar 25,612 (atau sekitar 15.7% deviasi jika kita bandingkan dengan median harga rumah). Tidak seburuk itu, kan? 
+
+![svp](shap-value-plot.png)
+_SHAP Feature Importance_
 
 Berdasarkan plot SHAP feature importance di atas, didapatkan 5 fitur paling penting, yang positif memengaruhi harga rumah adalah OverallQual, GrLivArea, TotalBsmtSF, BsmtFinSF1, dan GarageCars. Dalam bahasa manusia, kelima fitur tersebut adalah: kualitas material rumah, luas bangunan, luas area rubanah (basement), luar area rubanah dengan kualitas tertentu (?), serta kapasitas garasi. 
 
