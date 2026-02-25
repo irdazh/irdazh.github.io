@@ -14,7 +14,7 @@ Berhubung kemampuan bahasa Inggris saya sedang dalam tahap perbaikan, maka, usah
 
 # Permasalahan dan Dataset
 
-Pada proyek kali ini, saya buat model machine learning untuk memprediksi harga rumah. Saya buat beberapa model machine learning, mencakup model linear serta model pepohonan (tree-based model), membandingkannya, lantas memilih satu model terbaik untuk ditempatkan ke dalam aplikasi web ringan (model deployment) menggunakan Streamlit.
+Pada proyek kali ini, saya buat model machine learning untuk memprediksi harga rumah. Saya buat beberapa model machine learning, mencakup model linear serta model pepohonan (tree-based model), membandingkannya, lantas memilih satu model terbaik untuk ditempatkan ke dalam aplikasi web sederhana (model deployment) menggunakan Streamlit.
 
 Proyek ini menggunakan Ames Housing Dataset dari kompetisi di platform Kaggle, yang tentu saja tidak relevan dengan harga rumah di Indonesia. Data tersebut terdiri atas 1460 baris, dengan target berupa harga penjualan rumah (SalePrice) serta 79 fitur dengan beragam jenis, yang mencakup numerik, ordinal, dan nominal. Beberapa contoh dari fitur tersebut adalah kualitas material rumah (OverallQual), wilayah perumahan (Neighborhood), tipe rumah (MSSubClass), tahun konstruksi (YearBuilt), dan luas bangunan (GrLivArea).
 
@@ -70,8 +70,19 @@ Berdasarkan plot SHAP feature importance di atas, didapatkan 5 fitur paling pent
 Sepertinya, analisis mendalam terhadap fitur-fitur tersebut akan sangat amat menarik. Tentu saja tidak untuk sekarang: saya sudah bosan dengan seluruh perulangan ini. Hal-hal lawas yang terus ditunda, dijadikan beban di masa mendatang.
 
 # Aplikasi Web
+Model terbaik yang telah didapatkan, yaitu XGBoost dengan menggunakan seluruh fitur, tanpa ada embel-embel *feature engineering*, lantas ditempatkan dalam sebuah aplikasi web sederhana menggunakan Streamlit. Sila kunjungi pranala berikut untuk melakukan demo secara langsung: [https://irdazh-house-price-prediction.streamlit.app/](https://irdazh-house-price-prediction.streamlit.app/)!
 
-# Tumpukan Teknologi✨
+Pada pembuatan aplikasi web ini, dilakukan pengurangan pada fitur-fitur yang dapat dimasukan oleh pengguna. Dari puluhan faktor penentu harga rumah, hanya akan digunakan 7 fitur yang sekiranya penting (dan juga tidak penting, hanya sekadar untuk uji coba), meliputi: kualitas material rumah, tahun konstruksi, luas bangunan, luas rubanah, kualitas eksterior, kapasitas garasi, dan tipe garasi. Sedang fitur sisanya, dianggap sebagai *missing value*, dan dilakukan imputasi serupa ketika proses pemodelan. 
+
+Pada data numerik dan ordinal, imputasi dilakukan dengan menggunakan nilai median, sehingga, model akan menggunakan nilai rataan yang harusnya terhitung valid untuk data baru. Seharusnya, hal ini tidaklah menimbulkan masalah. Di lain sisi, pada data nominal, imputasi dilakukan dengan membuat kelas baru, yang mana, untuk fitur tanpa *missing value*, hal itu belum dipelajari dalam proses pemodelan. Sehingga, entahlah, mungkin model akan menghasilkan interpolasi yang cenderung bias, mengarang bebas, atau semacamnya?
+
+Ah, untuk sekarang, lupakan saja. Masih bukan ranah dan detailnya. 
+
+![hpp](/hpp-app.png)
+
+Aplikasi web tersebut memiliki beberapa fitur, mencakup: laman masukan detail rumah, informasi model, hasil prediksi yang ditampilkan dengan gauge chart (nirguna), perbandingan hasil prediksi dengan rumah serupa, serta dua fitur lain yang sejatinya lebih baik untuk dihapus saja. Apa pasal saya gunakan gauge chart untuk hasil prediksi? 
+
+# ✨Tumpukan Teknologi✨
 - Language: Python
 - Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost, lightgbm, shap (opsional)
 - Dashboard: Streamlit
