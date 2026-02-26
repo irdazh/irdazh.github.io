@@ -19,6 +19,8 @@ I am Daud, currently unemployed with one short job experience. A (kinda) fresh g
 
 Nope. Probably not.
 
+But still, follow these links to see some of my [awards](https://irdazh.github.io/posts/awards/) and [certifications](https://irdazh.github.io/posts/certifications/). 
+
 ## Just whine for a bit
 I always think that I'm pretty skillful in lots of data-related tasks. Although in reality, I'm just another mediocre in this field. I'd love working with data: getting some contexts out of their abstractness, building a useless utterly-complex machine learning model just for fun, copy-pasting lines of codes into some projects, and anything else in between. 
 
