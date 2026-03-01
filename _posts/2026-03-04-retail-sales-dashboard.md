@@ -1,13 +1,16 @@
 ---
 layout: post
 title: Retail Sales Dashboard
-
-categories: [DA Projects]
-tags: [dashboard, business intelligence, retail sales]
-description: "BI project: a simple dashboard on Retail Sales...." 
-media_subpath: /assets/img/retail-sales-dashboard
+categories:
+- DA Projects
+tags:
+- dashboard
+- business intelligence
+- retail sales
+description: 'BI project: a simple dashboard on Retail Sales....'
+media_subpath: "/assets/img/retail-sales-dashboard"
+date: 2026-03-04 00:00 +0000
 ---
-
 # Context 
 Uhm. It's mostly ChatGPT-ied -- so no wonder if it sounds soulless. Anw, have a nice day, as always.
 
@@ -121,7 +124,7 @@ This dashboard might help management to:
 - Shift from reactive reporting to proactive strategic planning
 
 # Dashboard Preview
-[Follow this link to play a live demo!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/RetailSalesIntelligenceDashboard)
+[Follow this link to play a live demo!](https://public.tableau.com/views/RetailSalesIntelligenceDashboard/ExecutiveOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ![db1](/db1.png)
 _Preview of the 1st dashboard: Executive Overview_
