@@ -63,33 +63,45 @@ Its main function is to identify growth drivers, margin risks, hidden opportunit
 ## 1. Revenue and Profit Are Not Perfectly Aligned
 Although sales and profit are generally correlated, peak revenue does not always generate peak profit. The highest sales month (~118k) produced only ~10k profit, while a lower sales month (~97k) generated the highest profit (~18k).
 
+![trend](/trend.png)
+
 This suggests margin compression during high-revenue periods, likely driven by heavier discounting.
 
 ## 2. Regional Performance Imbalance
 - The West region generates the highest revenue and maintains the lowest average discount (~10%), resulting in strong profitability.
 - The Central region, despite higher sales than the South, produces lower profit due to significantly higher discounting (~24%).
 
+![region](/region.png)
+
 In short, discount strategy strongly influences regional profitability. 
 
 ## 3. Technology as Growth Engine
+![topright](/quadrant.png)
 The Technology category consistently falls into the high-sales, high-profit quadrant. Products such as Copiers and Phones are major contributors to both revenue and profit.
+
+![categories](/categories.png)
 
 Technology is the company’s primary profit engine.
 
 ## 4. Margin Risk Categories
 Furniture and certain Machine-related subcategories generate high revenue but relatively weak profitability.
 
+![bottomleft](/quadrant.png)
+
 This suggests structural margin inefficiencies that require pricing, discount policy, or cost review.
 
 ## 5. Hidden Opportunities
 Subcategories such as Appliances and Paper demonstrate strong profitability relative to their sales volume.
 
+![topright](/quadrant.png)
 These segments represent scalable growth opportunities through targeted promotion.
 
 ## 6. Portfolio Cleanup Candidates
 Several subcategories (Furnishings, Bookcases, and another 5 from Office Supllies category) contribute low sales and low profit, increasing operational complexity without meaningful financial contribution.
 
-Rationalizing these SKUs may improve overall efficiency. Be wise tho, since it's not a one size fits all solution -- lots of considerations are needed here. 
+![bottomleft](/quadrant.png)
+
+Rationalizing these SKUs may improve overall efficiency. Be wise tho, since it's not a one-size-fits-all solution -- lots of considerations are needed here. 
 
 # 7. Recommendation
 The primary management action should focus on: 
