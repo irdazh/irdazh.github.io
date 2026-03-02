@@ -27,7 +27,7 @@ Lantas, saya, seorang statistisi andal, datang dengan pongahnya, membawa metode 
 
 Pada semua orang, saya katakan, “Itu gejala penyakit lain, anda tidak terinfeksi virus varian baru ini.” 
 
-# Problem & Dataset
+## Problem & Dataset
 Dengan asumsi bahwa 2 dari 100 orang pada cerita di atas benar-benar terinfeksi virus varian baru, maka diagnosis yang saya lakukan hanya memiliki galat atau kesalahan prediksi sebesar 2 persen, atau dengan kata lain, memiliki akurasi sebesar 98 persen. Hebat, bukan?
 
 Tentu saja tidak. Apa kabar 2 orang yang salah prediksi tersebut? Apakah dibiarkan saja untuk wafat lebih cepat? 
@@ -42,7 +42,7 @@ Data tersebut memuat hasil tes kepribadian serta frekuensi konsumsi 18 jenis NAP
 
 Pada proyek ini, saya hanya berfokus pada satu variabel respon berupa konsumsi heroin, dengan **memodifikasi** 5 kelas frekuensi asal menjadi 2 kelas baru untuk memudahkan pengerjaan. Kelas pertama berlabel 0 menunjukkan bukan pengguna heroin, sedangkan kelas kedua berlabel 1 menunjukkan pengguna heroin. Kelas pertama terdiri atas responden dengan konsumsi heroin terakhir lebih dari satu dekade yang lalu atau tidak pernah sama sekali. 
 
-# EDA (Exploratory Data Analysis)
+## EDA (Exploratory Data Analysis)
 Berikut ringkasan eksplorasi dan visualisasi data. Ringkas? Saya rasa tidak terlalu. Ah, sudahlah, toh *it is what it is*.
 
 ![hb](/heroin-barplot.png)
@@ -68,8 +68,8 @@ tersebut lebih buruk dari yang lain.
 
 ![nb](/categoric-unnormalized.png)
 
-# Modeling
-## Evaluation Metrics
+## Modeling
+### Evaluation Metrics
 Sebelum masuk ke pembentukan model, marilah kita bahas metrik evaluasi yang akan digunakan. Masih ingat dengan cerita di atas, bagaimana metrik akurasi memberikan nilai yang tinggi meskipun model yang dipakai tidaklah berguna?
 
 Enam buah. Sebanyak itulah metrik evaluasi yang akan dipakai di sini. Tiga buah (recall/sensitivity, F-measure, dan G-mean) merupakan metrik evaluasi utama, dan tiga lainnya (accuracy, specificity, dan precision) digunakan sebagai pembanding.
@@ -84,7 +84,7 @@ Di lain sisi, optimasi F-measure dan G-mean menangkap sebanyak mungkin pengguna 
 
 Rumit? Memang. Itu saja bukan sebuah solusi umum, hanya satu dari banyak kemungkinan kasus.
 
-## Algorithms and Methods
+### Algorithms and Methods
 Akan dibentuk 2 model sebagai tolok ukur (baseline), yaitu Logistic Regression dan SVM, serta 2 model utama: Random Forest dan Gradient Boosting. Model-model tersebut akan dikombinasikan dengan 3 metode optimasi ambang batas: Pmin, MID, dan 3 metode empiris. Termasuk model tanpa menggunakan metode optimasi ambang batas, terdapat total 24 (4 x 6) kombinasi model. 
 
 Empat algoritma yang saya gunakan harusnya sudah familiar. Namun, bagaimana dengan metode optimasi ambang batas? Metode ini bekerja dengan menggeser ambang batas standar (0.5) pada nilai **prediksi probabilitas** untuk melakukan prediksi ke dalam kelas tertentu.
@@ -96,7 +96,7 @@ dan optG yang ditujukan untuk mengoptimalkan 3 metrik evaluasi berbeda, yaitu re
 
 Berhubung data yang ada sudah terkuantifikasi, tahapan preprocessing tidak perlu untuk dilakukan. Selanjutnya, model akan dibentuk dan dievaluasi berdasarkan 6 metrik evaluasi menggunakan stratified 10-fold cross-validation (hasil rataan metrik dari 10 kali pemodelan validasi silang).
 
-## Modeling Result
+### Modeling Result
 Ada empat algoritma dikombinasikan dengan 6 ambang batas yang berbeda. Mari kita lihat model dasar saja, Logistic Regression. 
 
 ![log](/logistic-eval.png)
@@ -127,14 +127,14 @@ Ah iya, model lain menghasilkan nilai evaluasi yang serupa. Saya kira karena dat
 
 Ketiga model itu tidak akan dibahas secara mendetail. Asumsikan saja hasilnya serupa.
 
-# Model Comparison
+## Model Comparison
 Jika hasilnya serupa, lantas, untuk apa kita lakukan perbandingan model? Terlebih lagi, merepotkan diri menggunakan Uji Nemenyi, yang mana, cenderung tidak berguna?
 
 Pada proyek aslinya, dilakukan tiga kali Uji Nemenyi, masing-masing untuk membandingkan metode optimasi mana sajakah yang memiliki performa terbaik untuk setiap metrik evaluasi recall, F-measure, dan G-mean. Hal ini tentu saja digunakan untuk **validasi** bahwa metode yang kita lakukan ada manfaatnya. Berguna. Bukan hanya bualan belaka. 
 
 Baiklah, mari mulai dari metrik evaluasi recall.
 
-## Recall Optimization
+### Recall Optimization
 ![barplot-recall](/barplot-recall.png)
 
 Lihat saja gambar di atas. Seluruh model cenderung memiliki performa yang serupa: metode empiris optR memberikan nilai recall tertinggi, diikuti dengan Pmin, MID, dan barulah ambang batas standar. 
@@ -147,7 +147,7 @@ Secara formal, Uji Nemenyi dilakukan untuk 16 kombinasi model dan metode. Dari g
 
 Di lain sisi, kombinasi model dan metode terbaik (khususnya optR) berbeda secara statistik dibandingkan dengan ambang batas standar untuk keseluruhan model.
 
-## F-measure Optimization
+### F-measure Optimization
 Lantas, bagaimana dengan metrik evaluasi F-measure. Kombinasi model dan metode mana saja yang dapat mengoptimalkan metrik evaluasi ini? 
 
 ![fmeasbarplot](/barplot-f.png)
@@ -167,11 +167,11 @@ Saya rasa soal pemilihan uji yang digunakan. Biarkan saya menawarkan proposal ba
 2. Lalu dilanjutkan dengan komparasi kombinasi model dengan metode optimasi ambang batas. Yap, kita pisahkan saja dua hal tersebut. 
 3. Opsi lain? Tidak perlu dilakukan uji statistik. Selain merepotkan dan overrated, bukannya tidak diperlukan? Harusnya perbedaan sekecil apa pun bisa dianggap beda, kan? Atau entahlah.
 
-# Tech Stack
+## Tech Stack
 - Language: Python
 - Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
 
-# Conclusion & Reflection
+## Conclusion & Reflection
 Ambil saja satu dua hikmahnya, jika memang selalu seperti itu. *Nah, guess I was way too lazy to make a TLDR part. So, a short **that is that** is enough, right?*
 
 Dan ya, katanya jalan masih panjang? Maka sudah seharusnya, terus belajar, memperbaiki diri. Jadi lebih bijaksana? 
