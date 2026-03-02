@@ -12,13 +12,13 @@ Mulai dari mana baiknya? Ah, iya, tentu saja sebuah klarifikasi!
 
 Berhubung kemampuan bahasa Inggris saya sedang dalam tahap perbaikan, maka, usahlah kita ubah menggunakan bahasa sehari-hari, yakni, Indonesia. Alasan lain, versi bahasa Inggris dapat dilihat lewat pranala berikut ini: [https://github.com/irdazh/house-price-prediction](https://github.com/irdazh/house-price-prediction), pada bagian README. Kurang lebihnya, versi ini merupakan saduran dari versi bahasa Inggris tersebut. 
 
-# Permasalahan dan Dataset
+## Permasalahan dan Dataset
 
 Pada proyek kali ini, saya buat model machine learning untuk memprediksi harga rumah. Saya buat beberapa model machine learning, mencakup model linear serta model pepohonan (tree-based model), membandingkannya, lantas memilih satu model terbaik untuk ditempatkan ke dalam aplikasi web sederhana (model deployment) menggunakan Streamlit.
 
 Proyek ini menggunakan Ames Housing Dataset dari kompetisi di platform Kaggle, yang tentu saja tidak relevan dengan harga rumah di Indonesia. Data tersebut terdiri atas 1460 baris, dengan target berupa harga penjualan rumah (SalePrice) serta 79 fitur dengan beragam jenis, yang mencakup numerik, ordinal, dan nominal. Beberapa contoh dari fitur tersebut adalah kualitas material rumah (OverallQual), wilayah perumahan (Neighborhood), tipe rumah (MSSubClass), tahun konstruksi (YearBuilt), dan luas bangunan (GrLivArea).
 
-# EDA (Eksplorasi Data)
+## EDA (Eksplorasi Data)
 Dari statistik deskriptif dan visualisasi data yang telah saya buat, didapatkan beberapa simpulan, yang saya terakan di bawah. 
 
 ![spd](/sale-price-distribution.png){: h="30" .normal}
@@ -41,7 +41,7 @@ Berikutnya ditampilkan boxenplot dari variabel target SalePrice untuk seluruh ke
 
 Untuk keempat scatterplot di atas, sila lakukan interpretasi sendiri. Bukan suatu hal yang susah, kan?  
 
-# Pemodelan dan Komparasi
+## Pemodelan dan Komparasi
 
 Sebelum masuk ke pemodelan, pada tahap preprocessing, dilakukan split data sebanyak 80 persen untuk data latih dan 20 persen sisanya untuk data uji. Pada data yang hilang, dilakukan imputasi menggunakan kelas baru (None) untuk fitur nominal, serta nilai median untuk fitur numerik dan ordinal. Saya lakukan standardisasi menggunakan StandardScaler untuk fitur numerik (hanya dilakukan untuk model dasar) serta kodifikasi menggunakan OrdinalEncoder untuk fitur nominal. 
 
@@ -58,7 +58,7 @@ Setelahnya, dilakukan pemodelan lebih lanjut pada model pepohonan, menggunakan h
 
 Sebagai tambahan, sebetulnya, dilakukan juga pemodelan dengan menggunakan hanya sebagian fitur berdasarkan nilai dari mutual information. Tentu saja model ini memiliki performa di bawah model dengan seluruh fitur. Hanya saja, meski model ini bukanlah model terbaik, pendekatan dengan menggunakan sebagian fitur cocok digunakan untuk kondisi lain ke depannya. 
 
-# Model Terbaik dan Interpretasinya
+## Model Terbaik dan Interpretasinya
 
 Model terbaik didapat dengan menggunakan algoritma XGBoost dengan hyperparameter tuning. Model tersebut memberikan nilai MSLE terendah sebesar 0.138 dan RMSE sebesar 25,612 (atau sekitar 15.7% deviasi jika kita bandingkan dengan median harga rumah). Tidak seburuk itu, kan? 
 
@@ -69,7 +69,7 @@ Berdasarkan plot SHAP feature importance di atas, didapatkan 5 fitur paling pent
 
 Sepertinya, analisis mendalam terhadap fitur-fitur tersebut akan sangat amat menarik. Tentu saja tidak untuk sekarang: saya sudah bosan dengan seluruh perulangan ini. Hal-hal lawas yang terus ditunda, dijadikan beban di masa mendatang.
 
-# Aplikasi Web
+## Aplikasi Web
 Model terbaik yang telah didapatkan, yaitu XGBoost dengan menggunakan seluruh fitur, tanpa ada embel-embel *feature engineering*, lantas ditempatkan dalam sebuah aplikasi web sederhana menggunakan Streamlit. Sila kunjungi pranala berikut untuk melakukan demo secara langsung: [https://irdazh-house-price-prediction.streamlit.app/](https://irdazh-house-price-prediction.streamlit.app/)!
 
 Pada pembuatan aplikasi web ini, dilakukan pengurangan pada fitur-fitur yang dapat dimasukan oleh pengguna. Dari puluhan faktor penentu harga rumah, hanya akan digunakan 7 fitur yang sekiranya penting (dan juga tidak penting, hanya sekadar untuk uji coba), meliputi: kualitas material rumah, tahun konstruksi, luas bangunan, luas rubanah, kualitas eksterior, kapasitas garasi, dan tipe garasi. Sedang fitur sisanya, dianggap sebagai *missing value*, dan dilakukan imputasi serupa ketika proses pemodelan. 
@@ -82,14 +82,14 @@ Ah, untuk sekarang, lupakan saja. Masih bukan ranah dan detailnya.
 
 Aplikasi web tersebut memiliki beberapa fitur, mencakup: laman masukan detail rumah, informasi model, hasil prediksi yang ditampilkan dengan gauge chart (nirguna), perbandingan hasil prediksi dengan rumah serupa, serta dua fitur lain yang sejatinya lebih baik untuk dihapus saja. Apa pasal saya gunakan gauge chart untuk hasil prediksi? 
 
-# ✨Tumpukan Teknologi✨
+## ✨Tumpukan Teknologi✨
 - Language: Python
 - Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost, lightgbm, shap (opsional)
 - Dashboard: Streamlit
 - Version Control: Git, GitHub
 - Deployment: Streamlit Cloud
 
-# Simpulan & Refleksi
+## Simpulan & Refleksi
 Petuah bilang, lebih baik terlambat daripada tidak sama sekali. Lantas, apakah tunda-menunda masuk ke dalamnya? Toh, tetap dilakukan, meski membuat terseok hingga akhir.
 
 *I really wanna blabber about projects I did and competitions I had won in college. Yes, it all mostly was about data analysis and modeling to this kind of level. Yet. It took me a really long time to finish this project. Slowly. Full of boredom. It yet just shows how little I know about this field. I hate it. Stuck at this level, and slowly getting worse and worse. Without any plan or whatsoever. So what's next?*

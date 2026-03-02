@@ -1,12 +1,18 @@
 ---
 layout: post
 title: Drug Consumption Prediction
-categories: [DS Projects]
-tags: [classification, gradient boosting, random forest, drug consumption, threshold optimization]
-description: "An undergraduate thesis: imbalanced data classification on drug consumption using threshold optimization combined with RF and GB." 
-media_subpath: /assets/img/drug-consumption
+categories:
+- DS Projects
+tags:
+- classification
+- gradient boosting
+- random forest
+- drug consumption
+- threshold optimization
+description: 'An undergraduate thesis: imbalanced data classification on drug consumption
+  using threshold optimization combined with RF and GB.'
+media_subpath: "/assets/img/drug-consumption"
 ---
-
 Ah, since the original file is in Indonesian, should I do it in English, instead? Oh, such a weird logic, but let’s do it. It won’t be that long, right? Truth be told, it had a different structure than the one I usually worked on. It was somehow more *mbulet* — not in a simple straightforward structure (?). Also, it lacked some theoretical framework and reason on some of its steps -- and yet, it still passed. My bad. I'll probably revise one or two things to align with my storytelling -- as well as make things a bit simpler. 
 
 Ah, ternyata lebih mudah jika menggunakan bahasa Indonesia. Tidak perlu menyiapkan mental model yang begitu besar. Maka, dengan senang hati, akan saya lanjutkan saja dengan bahasa Indonesia. Biarlah biar seperti ini saja. 
