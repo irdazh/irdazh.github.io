@@ -9,9 +9,7 @@ order: 4
 
 
 > So is there anything you wanna add? 
-# How about this one? 
-
-Looks good I guess. hehe. Let's do this all.  -->
+# How about this one? -->
 
 Hello, *kawan*.
 
