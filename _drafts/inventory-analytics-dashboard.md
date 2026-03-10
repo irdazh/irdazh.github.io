@@ -52,3 +52,141 @@ Dashboard ini memberikan gambaran umum dari performa inventaris
 ### Key Visualizations
 1. Inventory Trend
 
+Key Visualizations
+
+Inventory Trend
+
+Shows how inventory levels evolved over time.
+The trend indicates a sharp increase from late December to early February followed by a gradual decline toward June.
+
+This suggests seasonal stock buildup followed by normalization.
+
+Inventory Value by Category
+
+Technology products represent the largest share of inventory value.
+This may indicate higher product prices or stronger demand within that category.
+
+Stock Level Distribution
+
+Inventory levels show a right-skewed distribution, with most products stocked below 500 units.
+
+Interestingly, the distribution appears bimodal, suggesting standardized stocking tiers rather than purely demand-driven inventory decisions.
+
+Low Stock Risk Products
+
+No products were found below their reorder point.
+Even the most at-risk items remain roughly 100–150 units above their reorder thresholds, indicating conservative safety stock policies.
+
+Dashboard 2 — Inventory Efficiency Analysis
+
+This dashboard focuses on operational efficiency and identifies products that may be tying up capital or posing supply risks.
+
+Units Sold vs Inventory
+
+This scatter plot compares demand with inventory levels.
+
+Key observations:
+
+Inventory levels cluster around three tiers (~200, ~400, and ~800 units)
+
+Units sold vary within a narrow range (approximately 1100–1300)
+
+This suggests inventory levels may follow fixed stocking policies rather than demand-driven allocation.
+
+Fast vs Slow Moving Products
+
+Fast-moving products:
+
+Binders Model 2
+
+Chairs Model X39
+
+Storage Model 3
+
+Slow-moving products:
+
+Storage Model 1
+
+Paper Model 3
+
+Chairs Model 3
+
+While all products show inventory turnover greater than one, indicating inventory does move during the period, relative differences still highlight potential inefficiencies.
+
+Slow-moving items may occupy warehouse space longer and tie up working capital.
+
+Inventory Turnover Analysis
+
+Products with lower turnover ratios may benefit from:
+
+Reduced reorder quantities
+
+Adjusted safety stock levels
+
+Closer monitoring of demand trends
+
+This helps prevent overstocking and improves inventory utilization.
+
+Supplier Risk Analysis
+
+Supplier C presents the highest operational risk:
+
+Average lead time: ~14 days
+
+Highest observed stockout rate
+
+Longer replenishment cycles increase the likelihood of stock shortages.
+
+Possible mitigation strategies include:
+
+Increasing safety stock for Supplier C products
+
+Negotiating faster delivery times
+
+Diversifying suppliers
+
+Key Insights
+
+Demand across products is relatively consistent, with units sold falling within a narrow range.
+
+Inventory levels appear to follow predefined stocking tiers, suggesting potential misalignment between demand and stocking policies.
+
+Some products exhibit slower turnover, indicating opportunities to optimize reorder strategies and reduce excess stock.
+
+Supplier C introduces supply chain risk due to longer lead times, which may require additional inventory buffers or supplier renegotiation.
+
+Recommendations
+
+Based on the analysis:
+
+Implement demand-driven inventory policies instead of fixed stocking tiers.
+
+Adjust reorder quantities for slow-moving products.
+
+Review supplier contracts to reduce lead time variability.
+
+Maintain safety stock buffers for products with long supplier lead times.
+
+These improvements could reduce holding costs, improve stock availability, and optimize working capital usage.
+
+Project Structure
+inventory-analysis/
+│
+├── data/
+│   └── inventory_dataset.csv
+│
+├── dashboards/
+│   └── tableau_dashboard.twb
+│
+├── images/
+│   └── dashboard_screenshots.png
+│
+└── README.md
+Conclusion
+
+This project demonstrates how data analytics and visualization tools can be used to evaluate inventory health, identify inefficiencies, and support better operational decision-making.
+
+The approach illustrates a typical workflow for business intelligence analysts working on supply chain or retail inventory optimization problems.
+
+
+
