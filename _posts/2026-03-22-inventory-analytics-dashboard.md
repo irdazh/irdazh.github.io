@@ -9,10 +9,10 @@ tags:
 - inventory analytics
 description: 'BI project: a not so simple dashboard on Inventory System.'
 media_subpath: "/assets/img/inventory-analytics"
+date: 2026-03-22 00:00 +0000
 ---
-
 Kalau toh sebagian besarnya diselesaikan oleh AI, untuk apa bersusah payah mengetik manual? 
-Jika hendak mengotak-atik dashboard secara langsung, lakukan [di pranala ini!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/InventorySupplyChainAnalytics/Dashboard1)
+Jika hendak mengotak-atik dashboard secara langsung, lakukan [di sini!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/InventorySupplyChainAnalytics/Dashboard1)
 
 Oh iya, tunggulah versi terbaru di masa depan yang tidak pasti itu. 
 
@@ -91,9 +91,9 @@ Scatter plot berikut membandingkan tingkat permintaan dengan tingkat persediaan.
     ![scatter](/scatter.png)
 
     Poin-poin inti: 
-      - Tingkat persediaan terkluster di sekitar tiga level (~200, ~400, dan ~800 unit)
-      - Jumlah unit yang terjual cenderung seragam, memiliki variasi yang rendah (sekitar 1100–1300)
-      - Hal ini menunjukkan bahwa tingkat persediaan mungkin mengikuti strategi inventarisasi tetap daripada dialokasikan berdasarkaan jumlah permintaan. 
+       - Tingkat persediaan terkluster di sekitar tiga level (~200, ~400, dan ~800 unit)
+       - Jumlah unit yang terjual cenderung seragam, memiliki variasi yang rendah (sekitar 1100–1300)
+       - Hal ini menunjukkan bahwa tingkat persediaan mungkin mengikuti strategi inventarisasi tetap daripada dialokasikan berdasarkaan jumlah permintaan. 
 
 1. Fast vs Slow Moving Products
    - Top 3 produk dengan laju tercepat: Binders Model 2, Chairs Model X39, Storage Model 3
@@ -105,12 +105,12 @@ Scatter plot berikut membandingkan tingkat permintaan dengan tingkat persediaan.
 
     Barang dengan laju lambat cenderung menempati ruang gudang lebih lama dan dapat meningkatkan biaya penyimpanan.
 
-1. Inventory Turnover Analysis
+2. Inventory Turnover Analysis
 
     ![turnover](/turnover.png)
 
     Produk dengan rasio perputaran (inventory turnover) yang lebih rendah dapat disiasati dengan:
-      - Pengurangan jumlah pemesanan ulang (reorder)
+      - Pengurangan jumlah pemesanan ulang (reorder
       - Penyesuaian tingkat stok pengaman (safety stock)
       - Pemantauan tren permintaan yang lebih ketat (demand trend)
 
@@ -118,14 +118,14 @@ Scatter plot berikut membandingkan tingkat permintaan dengan tingkat persediaan.
 
 1. Supplier Risk Analysis
    
-    Dari grafik di bawah, Supplier C memiliki risiko operasional tertinggi:   
+    Dari grafik di bawah, Supplier C memiliki risiko operasional tertinggi:
     - Waktu tunggu rata-rata: ~14 hari
     - Tingkat kekurangan stok tertinggi yang diamati
     - Siklus pengisian ulang yang lebih panjang meningkatkan kemungkinan kekurangan stok.
 
     ![supplier](/supplier.png)
 
-    Maka dari itu, beberapa mitigasi yang dapat dilakukan:   
+    Maka dari itu, beberapa mitigasi yang dapat dilakukan:
       - Meningkatkan stok pengaman untuk produk dari Supplier C
       - Negosiasi waktu pengiriman yang lebih cepat
       - Diversifikasi ke supplier lain 
@@ -138,10 +138,10 @@ Scatter plot berikut membandingkan tingkat permintaan dengan tingkat persediaan.
 
 ## Recommendations
 Berdasarkan analisis di atas:   
-- Terapkan kebijakan persediaan berbasis permintaan, bukan tingkatan persediaan tetap.
-- Sesuaikan jumlah pemesanan ulang untuk produk yang pergerakannya lambat.
-- Tinjau kontrak dengan supplier untuk mengurangi variabilitas waktu tunggu.
-- Tambahkan buffer sebagai pengaman untuk produk dengan waktu tunggu yang lama.
+  - Terapkan kebijakan persediaan berbasis permintaan, bukan tingkatan persediaan tetap.
+  - Sesuaikan jumlah pemesanan ulang untuk produk yang pergerakannya lambat.
+  - Tinjau kontrak dengan supplier untuk mengurangi variabilitas waktu tunggu.
+  - Tambahkan buffer sebagai pengaman untuk produk dengan waktu tunggu yang lama.
 
 Hal-hal di atas dapat mengurangi biaya penyimpanan, meningkatkan ketersediaan stok, dan mengoptimalkan penggunaan biaya penyimpanan.
 
