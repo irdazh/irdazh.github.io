@@ -11,7 +11,9 @@ description: 'BI project: a not so simple dashboard on Inventory System.'
 media_subpath: "/assets/img/inventory-analytics"
 ---
 
-Kalau toh sebagian besarnya diselesaikan oleh AI, untuk apa bersusah payah mengetik manual?  
+Kalau toh sebagian besarnya diselesaikan oleh AI, untuk apa bersusah payah mengetik manual? 
+Jika hendak mengotak-atik dashboard secara langsung, lakukan [di pranala ini!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/InventorySupplyChainAnalytics/Dashboard1)
+
 Oh iya, tunggulah versi terbaru di masa depan yang tidak pasti itu. 
 
 ## Project Overview
@@ -51,142 +53,97 @@ Dashboard ini memberikan gambaran umum dari performa inventaris
 
 ### Key Visualizations
 1. Inventory Trend
+Grafik di bawah menunjukkan trend jumlah stok seiring waktu. Grafik tersebut mengindikasikan adanya kenaikan tajam dari akhir Desember hingga awal Februari, yang diikuti dengan penurunan secara bertahap hingga bulan Juni. 
 
-Key Visualizations
+[!inventory](/trend.png)
 
-Inventory Trend
+Hal di atas menunjukkan adanya penumpukan stok musiman yang diikuti dengan proses normalisasi. 
 
-Shows how inventory levels evolved over time.
-The trend indicates a sharp increase from late December to early February followed by a gradual decline toward June.
+2. Inventory Value by Category
 
-This suggests seasonal stock buildup followed by normalization.
+[!Graph here](/category.png)
 
-Inventory Value by Category
+Produk-produk teknologi menyumbang nilai inventaris terbesar, meski tidak jauh berbeda dengan kategori lain. Hal ini bisa saja mengindikasikan harga produk ataupun permintaan yang lebih tinggi pada produk dalam kategori teknologi. 
 
-Technology products represent the largest share of inventory value.
-This may indicate higher product prices or stronger demand within that category.
+3. Stock Level Distribution
 
-Stock Level Distribution
+[!stock](/level.png)
 
-Inventory levels show a right-skewed distribution, with most products stocked below 500 units.
+Jumlah stok menunjukkan distribusi menceng kanan, dengan mayoritas produk memiliki stok di bawah 500 unit. 
+Menariknya, distribusi terlihat memiliki dua puncak, menandakan adanya standardisasi dalam proses inventarisasi, bukan murni berdasarkan jumlah permintaan pasar. 
 
-Interestingly, the distribution appears bimodal, suggesting standardized stocking tiers rather than purely demand-driven inventory decisions.
+4. Low Stock Risk Products
 
-Low Stock Risk Products
+[!low](/low.png)
 
-No products were found below their reorder point.
-Even the most at-risk items remain roughly 100–150 units above their reorder thresholds, indicating conservative safety stock policies.
+Tidak ada produk dengan stok kurang dari reorder point. 
+Bahkan pada item dengan risiko paling tinggi, tetap memiliki sekitar 100 hingga 150 unit di atas ambang batas reorder, mengindikasikan strategi inventarisasi yang cenderung konservatif.
 
-Dashboard 2 — Inventory Efficiency Analysis
+## Dashboard 2 — Inventory Efficiency Analysis
+Dashboard kedua berfokus pada efisiensi operasional: identifikasi produk yang membutuhkan modal penyimpanan besar serta produk yang memiliki risiko ketersediaan.  
 
-This dashboard focuses on operational efficiency and identifies products that may be tying up capital or posing supply risks.
+1. Units Sold vs Inventory
+Scatter plot berikut membandingkan tingkat permintaan dengan tingkat persediaan. 
 
-Units Sold vs Inventory
+[!scatter](/scatter.png)
 
-This scatter plot compares demand with inventory levels.
+Poin-poin inti: 
+- Tingkat persediaan terkluster di sekitar tiga level (~200, ~400, dan ~800 unit)
+- Jumlah unit yang terjual cenderung seragam, memiliki variasi yang rendah (sekitar 1100–1300)
+- Hal ini menunjukkan bahwa tingkat persediaan mungkin mengikuti strategi inventarisasi tetap daripada dialokasikan berdasarkaan jumlah permintaan. 
 
-Key observations:
+2. Fast vs Slow Moving Products
+- Top 3 produk dengan laju tercepat: Binders Model 2, Chairs Model X39, Storage Model 3
+- Top 3 produk dengan laju terlambat: Storage Model 1, Paper Model 3, Chairs Model 3
 
-Inventory levels cluster around three tiers (~200, ~400, and ~800 units)
+[!fastmoving](/fastmoving.png)
 
-Units sold vary within a narrow range (approximately 1100–1300)
+Meskipun semua produk menunjukkan perputaran persediaan (inventory turnover) lebih dari satu, yang menunjukkan bahwa persediaan memang bergerak selama periode tersebut, perbedaan relatif bisa jadi menunjukkan potensi inefisiensi.
 
-This suggests inventory levels may follow fixed stocking policies rather than demand-driven allocation.
+Barang dengan laju lambat cenderung menempati ruang gudang lebih lama dan dapat meningkatkan biaya penyimpanan.
 
-Fast vs Slow Moving Products
+3. Inventory Turnover Analysis
 
-Fast-moving products:
+[!turnover](/turnover.png)
 
-Binders Model 2
+Produk dengan rasio perputaran (inventory turnover) yang lebih rendah dapat disiasati dengan:
+- Pengurangan jumlah pemesanan ulang (reorder)
+- Penyesuaian tingkat stok pengaman (safety stock)
+- Pemantauan tren permintaan yang lebih ketat (demand trend)
 
-Chairs Model X39
+Hal ini ditujukan untuk mencegah kelebihan stok dan meningkatkan pemanfaatan inventaris.
 
-Storage Model 3
+4. Supplier Risk Analysis
 
-Slow-moving products:
+Dari grafik di bawah, Supplier C memiliki risiko operasional tertinggi: 
+- Waktu tunggu rata-rata: ~14 hari
+- Tingkat kekurangan stok tertinggi yang diamati
+- Siklus pengisian ulang yang lebih panjang meningkatkan kemungkinan kekurangan stok.
 
-Storage Model 1
+[!supplier](/supplier.png)
 
-Paper Model 3
+Maka dari itu, beberapa mitigasi yang dapat dilakukan:
+- Meningkatkan stok pengaman untuk produk dari Supplier C
+- Negosiasi waktu pengiriman yang lebih cepat
+- Diversifikasi ke supplier lain 
 
-Chairs Model 3
+## Key Insights
+- Permintaan di seluruh produk relatif konsisten, dengan unit yang terjual berada dalam kisaran yang sempit.
+- Tingkat persediaan tampaknya mengikuti tingkatan stok yang telah ditentukan sebelumnya, menunjukkan potensi ketidaksesuaian antara permintaan dan kebijakan penyimpanan.
+- Beberapa produk menunjukkan perputaran yang lebih lambat, menunjukkan peluang untuk mengoptimalkan strategi pemesanan ulang (reorder) dan mengurangi kelebihan stok.
+- Supplier C memiliki risiko ketidaksediaan tinggi karena lamanya waktu tunggu, yang mungkin memerlukan buffer persediaan tambahan atau negosiasi ulang.
 
-While all products show inventory turnover greater than one, indicating inventory does move during the period, relative differences still highlight potential inefficiencies.
+## Recommendations
+Berdasarkan analisis di atas:
+- Terapkan kebijakan persediaan berbasis permintaan, bukan tingkatan persediaan tetap.
+- Sesuaikan jumlah pemesanan ulang untuk produk yang pergerakannya lambat.
+- Tinjau kontrak dengan supplier untuk mengurangi variabilitas waktu tunggu.
+- Tambahkan buffer sebagai pengaman untuk produk dengan waktu tunggu yang lama.
 
-Slow-moving items may occupy warehouse space longer and tie up working capital.
+Hal-hal di atas dapat mengurangi biaya penyimpanan, meningkatkan ketersediaan stok, dan mengoptimalkan penggunaan biaya penyimpanan.
 
-Inventory Turnover Analysis
+## Conclusion
+Proyek ini menunjukkan bagaimana data analytics dan alat visualisasi dapat digunakan untuk mengevaluasi status inventarisasi, mengidentifikasi inefisiensi, dan mendukung pengambilan keputusan operasional yang lebih baik.
 
-Products with lower turnover ratios may benefit from:
-
-Reduced reorder quantities
-
-Adjusted safety stock levels
-
-Closer monitoring of demand trends
-
-This helps prevent overstocking and improves inventory utilization.
-
-Supplier Risk Analysis
-
-Supplier C presents the highest operational risk:
-
-Average lead time: ~14 days
-
-Highest observed stockout rate
-
-Longer replenishment cycles increase the likelihood of stock shortages.
-
-Possible mitigation strategies include:
-
-Increasing safety stock for Supplier C products
-
-Negotiating faster delivery times
-
-Diversifying suppliers
-
-Key Insights
-
-Demand across products is relatively consistent, with units sold falling within a narrow range.
-
-Inventory levels appear to follow predefined stocking tiers, suggesting potential misalignment between demand and stocking policies.
-
-Some products exhibit slower turnover, indicating opportunities to optimize reorder strategies and reduce excess stock.
-
-Supplier C introduces supply chain risk due to longer lead times, which may require additional inventory buffers or supplier renegotiation.
-
-Recommendations
-
-Based on the analysis:
-
-Implement demand-driven inventory policies instead of fixed stocking tiers.
-
-Adjust reorder quantities for slow-moving products.
-
-Review supplier contracts to reduce lead time variability.
-
-Maintain safety stock buffers for products with long supplier lead times.
-
-These improvements could reduce holding costs, improve stock availability, and optimize working capital usage.
-
-Project Structure
-inventory-analysis/
-│
-├── data/
-│   └── inventory_dataset.csv
-│
-├── dashboards/
-│   └── tableau_dashboard.twb
-│
-├── images/
-│   └── dashboard_screenshots.png
-│
-└── README.md
-Conclusion
-
-This project demonstrates how data analytics and visualization tools can be used to evaluate inventory health, identify inefficiencies, and support better operational decision-making.
-
-The approach illustrates a typical workflow for business intelligence analysts working on supply chain or retail inventory optimization problems.
-
-
+Pendekatan ini menggambarkan workflow yang umum digunakan analis business intelligence dalam menyelesaikan masalah optimasi rantai pasok dan inventarisasi dalam industri retail.
 
