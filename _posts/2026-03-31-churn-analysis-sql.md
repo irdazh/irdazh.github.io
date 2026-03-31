@@ -9,8 +9,8 @@ tags:
 - Python
 description: 'Churn drivers: customer behavior analysis using simple SQL and Python'
 media_subpath: "/assets/img/churn-analysis-sql"
+date: 2026-03-31 09:04 +0700
 ---
-
 # Customer Churn Analysis (SQL + Python)
 
 Apa ini? Lagi-lagi sebuah saduran dari *readme* kah? Iya lagi. Iya lagi.
