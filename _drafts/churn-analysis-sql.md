@@ -8,7 +8,7 @@ tags:
 - Business Intelligence
 - Python
 description: 'Churn drivers: customer behavior analysis using simple SQL and Python'
-media_subpath: "/assets/img/churn-analysis"
+media_subpath: "/assets/img/churn-analysis-sql"
 ---
 
 # Customer Churn Analysis (SQL + Python)
@@ -68,10 +68,36 @@ Analisis utama -- sila buka notebook sajalah untuk melihat visualisasi -- yang m
 ### 2B. Viz Explanation 
 
 Nah, just because I think I'll love it. 
-1. 
+1. Missing value
+   
+   ![Missing value](/missing_value.png)    
+   Oh tidak, ada missing value di Churn Reason.... Oh, tenanglah saja, buat apa pelanggan non-churn mengisi alasan untuk churn? Eak.
+
+2. Tenure months
+   
+   ![TM](/churn_tenure_cont.png)   
+   Terlihat kan? Bagaimana (kecuali 0 tenure months) makin lama tenur, proporsi pelanggan churn cenderung turun. Hal serupa dapat dilihat dari barplot di bawah, ketika kita coba kelompokkan tenur, makin singkat lama tenur makin besar pula proporsi pelanggan churn.    
+  ![TM](/churn_tenure_disc.png)
+
+1. Contract type
+   
+   ![CT](/churn_contract.png)   
+    Saya rasa jelas ya, serupa dengan tenure months. Makin rendah tipe kontrak-nya (month-to-month), makin tinggi juga proporsi churn-nya: 40 persen, wagelaseh? (sounds like a boomer)
+
+2. Monthly charges
+   
+   Ah, bagian ini sangat menarik, favorit saya. Karena setelah berpusing mencari plot yang cocok. Akhirnya, dapat juga density plot (?) Satu, pelanggan non-churn secara umum lebih banyak ketimbang pelanggan churn untuk rentang biaya bulanan mana pun. Dua, dilihat secara lebih detail, pelanggan non-churn memiliki dua puncak, di biaya bulanan rendah (20an) dan tinggi (80an). Tiga,  di lain sisi, density (proporsi) pelanggan churn naik seiring biaya bulanan yang makin tinggi. 
+
+   Simpulan? Biaya bulanan berkorelasi positif dengan proporsi pelanggan churn.
+   
+   ![DP](/monthly_density.png)
+   
+   Visual diskrit dapat dilihat pada plot di bawah. Jelas saja, lebih mudah dibaca. 
+
+   ![DP](/monthly_disc.png)
 
 
-
+4. Sebetulnya masih ada satu (?) lagi. Tapi sudahlah. Segitu juga lebih dari cukup. 
 
 ### 3. SQL Analysis
 
@@ -81,9 +107,9 @@ Digunakan untuk .... menjawab pertanyaan di atas. Ah, \***!
 
 Jadi, berikut insight-insight yang didapat: 
 1. Secara keseluruhan, tingkat churn sekitar 26.5 persen, mengindikasikan adanya cukup banyak pelanggan yang meninggalkan layanan telekomunikasi ini. 
-2. Lama tenure berasosiasi kuat dengan tingkat churn
-  * Pelanggan dengan tenure jangka pendek lebih tinggi kemungkinannya untuk churn
-  * Pelanggan jangka panjang (ew, what a translation) secara signifikan lebih stabil
+2. Lama tenure berasosiasi kuat dengan tingkat churn     
+   * Pelanggan dengan tenure jangka pendek lebih tinggi kemungkinannya untuk churn
+   * Pelanggan jangka panjang (ew, what a translation) secara signifikan lebih stabil
 3. Tipe contract merupakan faktor utama untuk churn
    * Month-to-month contract punya tingkat churn paling tinggi
    * Contract jangka panjang (tahunan) secara signifikan mengurangi tingkat churn. 
