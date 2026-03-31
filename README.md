@@ -1,3 +1,8 @@
+# A tutorial before everything got reset
+
+Bottomost. 
+
+--- 
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
@@ -41,3 +46,15 @@ This work is published under [MIT][mit] License.
 [chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
 [CD]: https://en.wikipedia.org/wiki/Continuous_deployment
 [mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+
+
+---
+## Actually a Guide. 
+1. Start VS Code, open the folder, press F1 and rerun the container (?) IDK hha. 
+2. run this: bundle exec jekyll serve
+3. and also bundle exec jekyll help → https://github.com/jekyll/jekyll-compose 
+4. for tutorial: https://chirpy.cotes.page/posts/write-a-new-post/ 
+5. don’t forget to do git add . → git commit → git push
+
+6. → bundle exec jekyll draft “Title” 
+7. → bundle exec jekyll publish _drafts/file --date yyyy-mm-dd 

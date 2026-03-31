@@ -11,7 +11,6 @@ description: 'An undergraduate thesis: imbalanced data classification on drug co
 media_subpath: "/assets/img/customer-review"
 ---
 
-
 ## Goals
 Companies receive thousands of customer reviews but cannot read them all. 
 The goal is to automatically analyze them and answer questions like:
