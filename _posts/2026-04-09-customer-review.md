@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Understanding Customer Reviews: Sentiment & Topics"
+title: 'Understanding Customer Reviews: Sentiment & Topics'
 categories:
 - DS Projects
 tags:
 - classification
 - sentiment analysis
 - topic modeling
-description: 'Sentiment analysis and topic modeling on customer reviews.'
+description: Sentiment analysis and topic modeling on customer reviews.
 media_subpath: "/assets/img/customer-review"
+date: 2026-04-09 00:00 +0000
 ---
-
 ## The Why
 
 When looking at e-commerce reviews, a simple question came up:
@@ -42,10 +42,10 @@ From simple word frequency:
 
 ![Positive reviews](/common_positive.png)
 
-**Positive reviews**
+- **Positive reviews**
 → fast delivery, good quality, matches expectation
 
-**Negative and Neutral reviews**
+- **Negative and Neutral reviews**
 → tbh i can't really tell tho, but somehow, it mostly contains negation like `tidak` and `tapi`, as well as several stop words. 
 
 ## Modeling Approach
@@ -57,7 +57,7 @@ I tested multiple models:
 
 With simple TF-IDF approach that works by extracting keywords, count the term frequency and inverse document frequency, then combine those two. 
 
-This approach works pretty well for short review, and more importantly, not that heavy. Fyi, this dataset have 9 words (after cleaned) in average (median).
+This approach works pretty well for short review, and more importantly, not that heavy. FYI, after cleaned, the review texts have 9 words in average, and most of them (99%) under 60.
 
 ![Length](/text_len.png)
 
@@ -71,14 +71,16 @@ This approach works pretty well for short review, and more importantly, not that
 
 ## A Small but Important Improvement
 
-Because the dataset is imbalanced, I adjusted prediction probabilities.
+Because the dataset is imbalanced (~92% positive), accuracy was not a reliable metric. Instead, I focused on macro F1 score
+
+And again, due to heavy class imbalance, I adjusted prediction probabilities.
 
 Instead of using raw probabilities:
 - I corrected them using class distribution
 
 Result:
 - Better detection of negative & neutral reviews
-- Overall improvement in F1 score, from 0.51 to 0.59
+- Overall improvement in F1 score, from 0.51 in baseline model to 0.59 after probability adjustment
 
 ## What Are Customers Complaining About?
 
@@ -94,7 +96,7 @@ Using topic modeling (LDA), I found 3 main themes for negative reviews:
 
 3. Product Match  
    → doesn’t match expectation, different color, size, etc.
-   
+
 
 ## The Dashboard
 
