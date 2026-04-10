@@ -1,7 +1,7 @@
 ---
 layout: post
 title: House Price Prediction
-date: 2026-02-24 15:12 +0700
+date: 2026-01-15 15:12 +0700
 categories: [DS Projects]
 tags: [regression, xgboost, house price, streamlit]
 description: "End-to-end ML project: regression modeling using XGBoost on house prices with Streamlit deployment." 
