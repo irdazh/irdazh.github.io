@@ -9,7 +9,7 @@ tags:
 - retail sales
 description: 'BI project: a simple dashboard on Retail Sales....'
 media_subpath: "/assets/img/retail-sales-dashboard"
-date: 2026-03-04 00:00 +0000
+date: 2026-01-25 00:00 +0000
 ---
 # Context 
 Uhm. It's mostly ChatGPT-ied -- so no wonder if it sounds soulless. Anw, have a nice day, as always.
