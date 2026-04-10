@@ -9,7 +9,7 @@ tags:
 - inventory analytics
 description: 'BI project: a not so simple dashboard on Inventory System.'
 media_subpath: "/assets/img/inventory-analytics"
-date: 2026-03-22 00:00 +0000
+date: 2026-02-25 00:00 +0000
 ---
 Kalau toh sebagian besarnya diselesaikan oleh AI, untuk apa bersusah payah mengetik manual? 
 Jika hendak mengotak-atik dashboard secara langsung, lakukan [di sini!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/InventorySupplyChainAnalytics/Dashboard1)
