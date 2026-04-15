@@ -3,6 +3,8 @@ For a deep dive
 * using that brain of yours (or chatgpt) --> down deeper on business level. 
 * fun projects from kaggle, youtube, github --- anything related with this thing, okay. right? 
 
+---
+
 
 1. house price prediction
    ```
@@ -66,11 +68,28 @@ For a deep dive
    ```
 6. customer review sentiment analysis
    ```
-   Wonder how customer 
+   Are customer actually satisfied, and if not, why?
 
-   
+   I analyzed an e-commerce reviews dataset, did a sentiment analysis by using classifier models, went unsupervise learning using LDA to do a topic modeling, and host those model online via Streamlit.
+   Although it failed (online).
+   Well, something went wrong on the pipeline thing, so it won't run online. For now, let's just call it a day. 
+
+   Feeling good?
+   - https://github.com/irdazh/customer-review/
+   - https://customer-review.streamlit.app/
    ```
+7. corn leaf disease detector
+   ```
+   Can we detect corn leaf disease and automate it using computer vision? (Ah, of course I won't deal with the hardware thingsy)
 
+   Using corn/maize leaf disease dataset I found in kaggle, I trained simple and complex CNN model (and fine-tuned pre-trained complex models such as ResNet and MobileNet), then deployed them online via Streamlit! (For local deployment I use FastAPI backend + Streamlit frontend: oh don't ask me how to do this and that, I just vibe-coded them) 
+
+   The model performs well with high accuracy (89%), although a bit low on some metrics due to a slight imbalance. And, uhm, uh, yeah, you see... it's slightly overfitting, which is normal!  
+
+   Yeah, pretty sure that's that. Bye. 
+   - https://leaf-disease-deploy.streamlit.app/
+   - https://irdazh.github.io/posts/leaf-disease/
+   ```
 
 
 
