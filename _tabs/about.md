@@ -58,8 +58,8 @@ Here we go.
    (3) high charges correlate with churn
 
    Check these out:
-   [repo]() and
-   [article](https://github.com/irdazh/churn-analysis-sql)
+   [repo](https://github.com/irdazh/churn-analysis-sql) and
+   [article!](https://irdazh.github.io/posts/churn-analysis-sql/)
 
 
 1. Customer Review Sentiment Analysis
@@ -79,7 +79,7 @@ Here we go.
    [article](https://irdazh.github.io/posts/customer-review/), and
    [the failed demo!](https://customer-review.streamlit.app/)
 
-<!-- 1. Inventory Analytics Dashboard
+1. Inventory Analytics Dashboard
 
      ![IAD](/assets/img/inventory-analytics/overview.png)_Inventory health overview dashboard using Tableau_
 
@@ -90,7 +90,7 @@ Here we go.
 
    Uhm, anyway, just check these out:
    [article](https://irdazh.github.io/posts/inventory-analytics-dashboard/) and
-   [demo!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/InventorySupplyChainAnalytics/Dashboard1) -->
+   [demo!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/InventorySupplyChainAnalytics/Dashboard1)
    
 1. House Price Prediction
     
@@ -131,6 +131,7 @@ Here we go.
    Yes, I actually analyzed that kind of trivial thing. But nope, no need to check this out:
    [repo](https://github.com/irdazh/final-project) and
    [article!](https://irdazh.github.io/posts/drug-consumption-prediction/) 
+
 
 
 
