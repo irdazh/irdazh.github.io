@@ -79,7 +79,7 @@ Here we go.
    [article](https://irdazh.github.io/posts/customer-review/), and
    [the failed demo!](https://customer-review.streamlit.app/)
 
-1. Inventory Analytics Dashboard
+<!-- 1. Inventory Analytics Dashboard
 
      ![IAD](/assets/img/inventory-analytics/overview.png)_Inventory health overview dashboard using Tableau_
 
@@ -90,7 +90,7 @@ Here we go.
 
    Uhm, anyway, just check these out:
    [article](https://irdazh.github.io/posts/inventory-analytics-dashboard/) and
-   [demo!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/InventorySupplyChainAnalytics/Dashboard1)
+   [demo!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/InventorySupplyChainAnalytics/Dashboard1) -->
    
 1. House Price Prediction
     
