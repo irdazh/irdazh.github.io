@@ -25,7 +25,7 @@ as well!
 
 Here we go.
 
-## Corn Leaf Disease Detector
+## [Corn Leaf Disease Detector](https://irdazh.github.io/posts/leaf-disease/)
 
  Can we detect corn leaf disease and automate it using computer vision?
  (Ah, of course, it's conceptual only. I won't deal with the hardware thingamajig.)
@@ -46,7 +46,7 @@ Here we go.
  [article](https://irdazh.github.io/posts/leaf-disease/), and
  [demo that actually works!](https://leaf-disease-deploy.streamlit.app/) 
  
-## Churn Analysis
+## [Churn Analysis](https://irdazh.github.io/posts/churn-analysis-sql/)
 
    ![CA](/assets/img/churn-analysis-sql/monthly_density.png)_Higher monthly charges correlate with higher churn rate_
 
@@ -62,7 +62,7 @@ Here we go.
  [article!](https://irdazh.github.io/posts/churn-analysis-sql/)
 
 
-## Customer Review Sentiment Analysis
+## [Customer Review Sentiment Analysis](https://irdazh.github.io/posts/customer-review/)
 
    ![CR](/assets/img/customer-review/dashboard.png)_Customer review dashboard overview_
  
@@ -79,7 +79,7 @@ Here we go.
  [article](https://irdazh.github.io/posts/customer-review/), and
  [the failed demo!](https://customer-review.streamlit.app/)
 
-## Inventory Analytics Dashboard
+## [Inventory Analytics Dashboard](https://irdazh.github.io/posts/inventory-analytics-dashboard/)
 
    ![IAD](/assets/img/inventory-analytics/overview.png)_Inventory health overview dashboard using Tableau_
 
@@ -92,7 +92,7 @@ Here we go.
  [article](https://irdazh.github.io/posts/inventory-analytics-dashboard/) and
  [demo!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/InventorySupplyChainAnalytics/Dashboard1)
  
-## House Price Prediction
+## [House Price Prediction](https://irdazh.github.io/posts/house-price-prediction/)
   
    ![HPP](/assets/img/house-price/hpp-app.png)_House price predictor deployed using streamlit app_
  
@@ -105,7 +105,7 @@ Here we go.
  [article](https://irdazh.github.io/posts/house-price-prediction/), and
  [demo!](https://irdazh-house-price-prediction.streamlit.app/)
 
-## Retail Sales Dashboard
+## [Retail Sales Dashboard](https://irdazh.github.io/posts/retail-sales-dashboard/)
 
    ![RSD](/assets/img/retail-sales-dashboard/db1.png)_Executive overview dashboard using Tableau_
 
@@ -121,7 +121,7 @@ Here we go.
  [article](https://irdazh.github.io/posts/retail-sales-dashboard/) and
  [demo!](https://public.tableau.com/views/RetailSalesIntelligenceDashboard/ExecutiveOverview?)
 
-## Drug Consumption Prediction
+## [Drug Consumption Prediction](https://irdazh.github.io/posts/drug-consumption-prediction/) 
  
    ![DCP](/assets/img/drug-consumption/nemenyi-f.png)_Nemenyi test for comparing models & methods performance based on F1-score_
 
