@@ -134,7 +134,6 @@ Here we go.
 
 
 
-
 <!-- I am Daud, currently unemployed with one short job experience. A (kinda) fresh graduate in Statistics from Universitas Gadjah Mada. It's supposed to be a place where I **pridely** put all my portfolios. Will it come in handy, someday, in the future, though?
 
 Nope. Probably not.
