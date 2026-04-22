@@ -12,10 +12,13 @@ Ah, I used a simulated dataset for this project.
 
 A specific company (Specom) launched a Digital Gold product that allows users to buy and sell gold digitally.
 The business earns revenue from transaction fees.
-This dashboard aims to:
-1. monitor product performance
+This dashboard aims to monitor:
+
+1. product performance
 2. user activity, and
-3. revenue growth to support business decision-making.
+3. revenue growth
+
+those all to support business decision-making.
 
 ## Business Questions
 
@@ -41,8 +44,6 @@ Key features:
 - Python (data generation)
 
 ## Dashboard Preview
-
-Add image here tho not yet. I haven't okay. 
 
 ![Dashboard Overview](images/dashboard.png)
 
@@ -83,7 +84,7 @@ confirming the fee-based business model is functioning effectively.
 Since buy activity dominates, introducing incentives for selling (e.g., lower fees or promotions) 
 could increase transaction frequency and revenue.
 
-But why should we focus on selling? Is it because it's the nondominated part? 
+*But why should we focus on selling? Is it because it's the nondominate part?*
 
 ### 2. Improve User Retention
 
@@ -105,68 +106,4 @@ Given most transactions occur on mobile, improving mobile UX could significantly
 - Cohort analysis (user retention)
 - Segmentation (high-value vs low-value users)
 - Profitability analysis per user group
-
-<!-- 
-## 🟩 ADD 1: Engagement Rate (VERY STRONG)
-
-You already have:
-
-* total users
-* active users
-
-👉 Add:
-
-```text
-Engagement Rate = Active Users / Total Users
-```
-
----
-
-👉 Insight example:
-
-```text
-Engagement rate increased over time, indicating not only user growth but improved platform stickiness.
-```
-
----
-
----
-
-## 🟨 ADD 2: Buy vs Sell Ratio Over Time
-
-Right now you only have totals.
-
-👉 Add trend:
-
-* weekly buy vs sell
-
----
-
-👉 Insight:
-
-```text
-Buy dominance persists over time, suggesting users treat the product as long-term investment rather than trading.
-```
-
----
-
----
-
-## 🟦 OPTIONAL (ONLY IF YOU WANT EXTRA EDGE)
-
-### Monthly deep dive
-
-Pick 1 month:
-
-* April for example
-
-Answer:
-
-* peak activity?
-* anomalies?
-
-👉 but honestly:
-
-> Not required unless you want extra polish
-
---> 
+- Misc: engagement rate, weekly buy vs sell, one month deep dive
