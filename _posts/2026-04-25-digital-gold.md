@@ -9,6 +9,7 @@ tags:
 - digital gold
 description: 'BI project: a simple dashboard on Digital Gold'
 media_subpath: "/assets/img/digital-gold"
+date: 2026-04-25 00:00 +0000
 ---
 A mini project based on a job skill assessment test. 
 
