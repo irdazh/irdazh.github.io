@@ -1,13 +1,25 @@
-# MP01: Digital Gold Performance Dashboard
-
+---
+layout: post
+title: Digital Gold Performance Dashboard
+categories:
+- DA Projects
+tags:
+- dashboard
+- business intelligence
+- digital gold
+description: 'BI project: a simple dashboard on Digital Gold'
+media_subpath: "/assets/img/digital-gold"
+---
 A mini project based on a job skill assessment test. 
+
+![Dashboard Overview](/dashboard.png)_Dashboard overview_
 
 I stumbled upon a skill assessment test for a job that I applied at some day in April. 
 Since i thought it'll be a waste to just wing it once and left it to mold over time, 
 I will just post it here, and rebrand it as a project. A crude, unrefined analysis.
 
-Ah, I used a simulated dataset for this project. 
-  
+Ah, I used a simulated dataset for this project. For a live demo, go straight [here!](https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/DigitalGold_17765016194520/Dashboard1)
+
 ## Business Context
 
 A specific company (Specom) launched a Digital Gold product that allows users to buy and sell gold digitally.
@@ -45,7 +57,7 @@ Key features:
 
 ## Dashboard Preview
 
-![Dashboard Overview](images/dashboard.png)
+![Dashboard Overview](/dashboard2.png)_Dashboard overview_
 
 ## Key Metrics
 
@@ -58,15 +70,21 @@ Key features:
 
 ### 1. Product Growth
 
+![Product](/growth.png)_Weekly transaction and revenue trend_
+
 Transactions increased significantly from ~100 to ~500 per week in 6 months, 
 indicating strong product adoption.
 Revenue followed a similar upward trend, suggesting healthy monetization.
 
 ### 2. User Engagement
 
+![Engagement](/engagement.png)_Total active users in weekly basis_
+
 Active users grew from ~100 to ~300 weekly in 6 months, showing increasing engagement alongside user base growth.
 
 ### 3. Buy vs Sell Behavior
+
+![Buy & Sell](/buysell.png)_Total value of buy vs sell_
 
 Buy transactions dominate the platform (~14B vs ~6B total value), 
 indicating users are primarily accumulating gold rather than trading.
