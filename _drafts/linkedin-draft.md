@@ -51,6 +51,21 @@ Done schedule till 29 April 2026 (each Wed & Sat):
    - https://irdazh.github.io/posts/leaf-disease/
    ```
 
+8. digital gold dashboard
+
+  ```
+  A rebrand from a job test. 
+  --- 
+  (Bla-bla bla blah, some sort of explanation) and viola: here I present you a digital gold dashboard!
+  
+  Where the company supposedly be able to monitor product performance, user activity, and revenue growth. *Claps
+  
+  As usual (?) I use Tableau (and Python to generate the data). It's a mini project, and so, check out:
+  - https://irdazh.github.io/posts/digital-gold/
+  - https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/DigitalGold_17765016194520/Dashboard1
+ 
+  ```
+
 <!-- 
 1. house price prediction
    ```
