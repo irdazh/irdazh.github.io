@@ -8,10 +8,11 @@ For a deep dive
 Done schedule till 29 April 2026 (each Wed & Sat): 
 1. retail sales dashboard,
 2. house price prediction & drug consumption
-3. inventory analytics dashboard
+3. skip & inventory analytics dashboard
 
+Next posts are only for Sat. But done for all 8 till May 30th 2026. 
 
----
+<!--
 
 
 
@@ -52,7 +53,6 @@ Done schedule till 29 April 2026 (each Wed & Sat):
    ```
 
 8. digital gold dashboard
-
   ```
   A rebrand from a job test. 
   --- 
@@ -65,8 +65,7 @@ Done schedule till 29 April 2026 (each Wed & Sat):
   - https://public.tableau.com/app/profile/daud.muhamad.azhari/viz/DigitalGold_17765016194520/Dashboard1
  
   ```
-
-<!-- 
+  
 1. house price prediction
    ```
    How much money should you spend for a decent (fictional) house?
