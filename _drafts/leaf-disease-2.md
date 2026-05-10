@@ -14,9 +14,13 @@ media_subpath: "/assets/img/leaf-disease"
 
 In this project, I built an end-to-end **image classification** system to detect corn leaf diseases using deep learning — and **deployed** it into a working web application.
 
-Yup, if you guys remember, this is the second article of the previous [Leaf Disease Detector](https://irdazh.github.io/posts/leaf-disease) article which might contain a more detailed explanation. Let's see. 
+Yup, if you guys remember, this isn't the first time I talked about leaf disease detector. This is the second article of the previous [Leaf Disease Detector](https://irdazh.github.io/posts/leaf-disease) article which might contain a more detailed explanation. Let's see. 
 
 I think it's best to be work in progress. Most topics are pretty new to me, and definitely much more complicated than I anticipated. Nah, not sure tho.
+
+> Work in progress: I don't even remember the last time or how much I edited the code....
+{: .prompt-warning }
+
 
 
 ## Problem

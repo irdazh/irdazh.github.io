@@ -10,7 +10,8 @@ Done schedule till 29 April 2026 (each Wed & Sat):
 2. house price prediction & drug consumption
 3. skip & inventory analytics dashboard
 
-Next posts are only for Sat. But done for all 8 till May 30th 2026. 
+Next posts are only for Sat. But done for all 8 till May 30th 2026. So, what's there to add?
+
 
 <!--
 
