@@ -16,7 +16,6 @@ media_subpath: /assets/img/chatbot
    
 3. and → bundle exec jekyll publish _drafts/file --date yyyy-mm-dd 
    
-   
 4. run this: bundle exec jekyll serve
 
 5. and also bundle exec jekyll help → https://github.com/jekyll/jekyll-compose 

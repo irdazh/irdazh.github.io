@@ -4,18 +4,18 @@ For a deep dive
 * fun projects from kaggle, youtube, github --- anything related with this thing, okay. right? 
 
 --- 
+1. Starts from 15 May, do check the page's comment instead --> Do copy paste, and put them into a good use? Nope? Oh, sure haha. Hahah.
 
-Done schedule till 29 April 2026 (each Wed & Sat): 
-1. retail sales dashboard,
-2. house price prediction & drug consumption
-3. skip & inventory analytics dashboard
+2. Next posts are only for Sat. But done for all 8 till May 30th 2026. So, what's there to add?
 
-Next posts are only for Sat. But done for all 8 till May 30th 2026. So, what's there to add?
+3. Done schedule till 29 April 2026 (each Wed & Sat): 
+   1. retail sales dashboard,
+   2. house price prediction & drug consumption
+   3. skip & inventory analytics dashboard
+
 
 
 <!--
-
-
 
 5. churn analysis
    ```

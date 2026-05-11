@@ -1,27 +1,41 @@
 ---
 layout: post
 title: Photography Chatbot AI
-categories: 
+categories:
 - DS Projects
 - BE Projects
-
-tags: [backend, streamlit, chatbot, ai]
-
-description: "Experiment on making an AI Chatbot using FastAPI combined with Groq service and deployed via Hugging Face space."
-
-media_subpath: /assets/img/chatbot
-
+tags:
+- backend
+- streamlit
+- chatbot
+- ai
+description: Experiment on making an AI Chatbot using FastAPI combined with Groq service
+  and deployed via Hugging Face space.
+media_subpath: "/assets/img/chatbot"
 ---
-
-
 <!-- 
 
 Parts
 1. What you did + screenshot + follow these links
-   
 2. the problem -> approach -> key findings -> deployment -> what i learnt: conclusion -> demo  
-
 3. Put lots of images. I guess. 
+
+LinkedIn
+
+Since it's getting out of hand, I tried implementing (?) an LLM model as a chatbot. I just called their API and put it into a (not so) good use...
+
+I put the model in a photography chatbot, and found: nothing! 
+
+B-but I learnt a (few) lot:
+- Creating a FastAPI backend part
+- A Streamlit frontend 
+- Dockerfile containerization
+- And a nice deployment using Hugging Face space
+- Well, the potential is HUGE. 
+
+Check them out: 
+ - https://irdazh.github.io/posts/chatbot-ai/
+ - https://irdazh-chatbot-ai.hf.space
 
 -->
 
@@ -35,9 +49,9 @@ Therefore I started learning these sort of things. Focus on deployment, putting 
 
 Which, to be honest, it made little to no sense for me till now. And this page is part of this whole lesson.
 
----
+<center> *** </center>
 
-Enough with the chatter. So, in this project, I ended up building a Photography Chatbot AI. 
+**Enough with the chatter**. So, in this project, I ended up building a Photography Chatbot AI. 
 
 
 ![preview](/preview.png)_Preview of the online app (?)_
@@ -93,7 +107,7 @@ A whole LOT!
 
 
 ## Demo
-Well, I tried embed the space here. Does it work? 
+Well, I tried embed the space here. Since it works offline, does it also work online? 
 Else [click this!](https://irdazh-chatbot-ai.hf.space)
 
 
@@ -104,7 +118,5 @@ Else [click this!](https://irdazh-chatbot-ai.hf.space)
 	height="450"
 ></iframe>
 
-
-**Oh, how about a screencast?**
 
 
