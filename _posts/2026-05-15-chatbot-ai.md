@@ -9,9 +9,11 @@ tags:
 - streamlit
 - chatbot
 - ai
+- fastapi
 description: Experiment on making an AI Chatbot using FastAPI combined with Groq service
   and deployed via Hugging Face space.
 media_subpath: "/assets/img/chatbot"
+date: 2026-05-15 00:00 +0000
 ---
 <!-- 
 
