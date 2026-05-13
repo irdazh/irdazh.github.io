@@ -3,7 +3,6 @@ layout: post
 title: Photography Chatbot AI
 categories:
 - DS Projects
-- BE Projects
 tags:
 - backend
 - streamlit
