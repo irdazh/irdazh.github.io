@@ -22,7 +22,7 @@ Lemme boast about (not) all of my projects I've done during and post university 
 Oh btw, I did join and won lots of competition.
 Bad news, I didn't make a decent documentation about them (Ah, all the more university projects).
 But then, check these 
-[repo](https://github.com/irdazh/Competitions) and
+[repo](https://github.com/irdazh/) and
 [awards](https://irdazh.github.io/posts/awards/)!
 And in case of getting curious, check
 [these certifications](https://irdazh.github.io/posts/certifications/)
