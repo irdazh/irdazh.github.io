@@ -2,6 +2,7 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+toc: true
 ---
 
 <!-- 
@@ -28,61 +29,98 @@ And in case of getting curious, check
 [these certifications](https://irdazh.github.io/posts/certifications/)
 as well!
 
+---
+
+
 Here we go.
+
+
+## [ML Deployment Prototype](https://irdazh.github.io/posts/ml-deploy/)
+
+ I made a go to template on deploying an ml model online. Using a complex combination of backend FastAPI and frontend Streamlit parts, followed by a fancy dockerization technique, then hosted and ran in Hugging Face space. 
+
+  ![PCA](/assets/img/ml-deploy/preview.png)_Deployment prototype preview, via Hugging Face Space_
+
+ Wohoo, lots of jargons!
+ 
+ Since it's only a prototype, I found that there's no need for me to explain things in a great detail. Instead, check these out:
+  [repo](https://github.com/irdazh/ml-deploy/),
+  [article](https://irdazh.github.io/posts/ml-deploy/), and
+  [live demo!](https://irdazh-ml-deploy.hf.space) 
+
+## [Photography Chatbot AI](https://irdazh.github.io/posts/chatbot-ai/)
+
+  Since AI thingies are getting out of hand, I tried implementing an LLM model as a chatbot. I just called their API and put it into a (not so) good use...
+
+  ![PCA](/assets/img/chatbot/preview.png)_Photography Chatbot AI preview, deployed via Hugging Face Space_
+
+  I put the model in a photography chatbot, and found: nothing! 
+
+  B-but I learnt a (few) lot:
+  (1) creating a FastAPI backend part,
+  (2) a Streamlit frontend, 
+  (3) Docker containerization,
+  (4) and a nice deployment using Hugging Face space,
+
+  Well, in short, the potential is HUGE. Therefore check these out:
+  [repo](https://github.com/irdazh/chatbot-ai-tutorial/),
+  [article](https://irdazh.github.io/posts/chatbot-ai/), and
+  [live demo!](https://irdazh-chatbot-ai.hf.space) 
+
 
 ## [Corn Leaf Disease Detector](https://irdazh.github.io/posts/leaf-disease/)
 
- Can we detect corn leaf disease and automate it using computer vision?
- (Ah, of course, it's conceptual only. I won't deal with the hardware thingamajig.)
+  Can we detect corn leaf disease and automate it using computer vision?
+  (Ah, of course, it's conceptual only. I won't deal with the hardware thingamajig.)
 
-   ![CLDD](/assets/img/leaf-disease/demo1.png)_Corn leaf disease detector deployed using streamlit app_
+  ![CLDD](/assets/img/leaf-disease/demo1.png)_Corn leaf disease detector deployed using streamlit app_
 
- Using corn/maize leaf disease dataset I found in kaggle,
- I trained simple and complex CNN model (and fine-tuned pre-trained complex models such as ResNet and MobileNet).
- I then deployed them online via Streamlit!
- (For local deployment I use FastAPI backend + Streamlit frontend:
- oh don't ask me how to do this and that, I just vibe-coded them~) 
+  Using corn/maize leaf disease dataset I found in kaggle,
+  I trained simple and complex CNN model (and fine-tuned pre-trained complex models such as ResNet and MobileNet).
+  I then deployed them online via Streamlit!
+  (For local deployment I use FastAPI backend + Streamlit frontend:
+  oh don't ask me how to do this and that, I just vibe-coded them~) 
 
- The model performs well with high accuracy (89%), although a bit low on some metrics due to a slight imbalance.
- And, uhm, uh, yeah, you see... it's slightly overfitting, which is perfectly normal!  
+  The model performs well with high accuracy (89%), although a bit low on some metrics due to a slight imbalance.
+  And, uhm, uh, yeah, you see... it's slightly overfitting, which is perfectly normal!  
 
- Yeah, pretty sure that's that, and check these out: 
- [repo](https://github.com/irdazh/leaf-disease/),
- [article](https://irdazh.github.io/posts/leaf-disease/), and
- [demo that actually works!](https://leaf-disease-deploy.streamlit.app/) 
- 
+  Yeah, pretty sure that's that, and check these out: 
+  [repo](https://github.com/irdazh/leaf-disease/),
+  [article](https://irdazh.github.io/posts/leaf-disease/), and
+  [demo that actually works!](https://leaf-disease-deploy.streamlit.app/) 
+  
 ## [Churn Analysis](https://irdazh.github.io/posts/churn-analysis-sql/)
 
-   ![CA](/assets/img/churn-analysis-sql/monthly_density.png)_Higher monthly charges correlate with higher churn rate_
+  ![CA](/assets/img/churn-analysis-sql/monthly_density.png)_Higher monthly charges correlate with higher churn rate_
 
- Why do you think customers churn?
+  Why do you think customers churn?
 
- I analyzed a telecom dataset using SQL and Python and found:
- (1) short tenure customers churn the most,
- (2) month-to-month contracts drive churn, and
- (3) high charges correlate with churn
+  I analyzed a telecom dataset using SQL and Python and found:
+  (1) short tenure customers churn the most,
+  (2) month-to-month contracts drive churn, and
+  (3) high charges correlate with churn
 
- Check these out:
- [repo](https://github.com/irdazh/churn-analysis-sql) and
- [article!](https://irdazh.github.io/posts/churn-analysis-sql/)
+  Check these out:
+  [repo](https://github.com/irdazh/churn-analysis-sql) and
+  [article!](https://irdazh.github.io/posts/churn-analysis-sql/)
 
 
 ## [Customer Review Sentiment Analysis](https://irdazh.github.io/posts/customer-review/)
 
-   ![CR](/assets/img/customer-review/dashboard.png)_Customer review dashboard overview_
- 
- Are customers actually satisfied, and if not, why?
+  ![CR](/assets/img/customer-review/dashboard.png)_Customer review dashboard overview_
+  
+  Are customers actually satisfied, and if not, why?
 
- I analyzed an e-commerce reviews dataset, did a sentiment analysis by using classifier models,
- went unsupervise learning using LDA to do a topic modeling, and host those models online via Streamlit.
+  I analyzed an e-commerce reviews dataset, did a sentiment analysis by using classifier models,
+  went unsupervise learning using LDA to do a topic modeling, and host those models online via Streamlit.
 
- Although it failed (online). Haha.
- 
- Well, something went wrong on the pipeline thing, so it won't run online. For now, let's just call it a day. 
- And check these out:
- [repo](https://github.com/irdazh/customer-review/),
- [article](https://irdazh.github.io/posts/customer-review/), and
- [the failed demo!](https://customer-review.streamlit.app/)
+  Although it failed (online). Haha.
+  
+  Well, something went wrong on the pipeline thing, so it won't run online. For now, let's just call it a day. 
+  And check these out:
+  [repo](https://github.com/irdazh/customer-review/),
+  [article](https://irdazh.github.io/posts/customer-review/), and
+  [the failed demo!](https://customer-review.streamlit.app/)
 
 ## [Inventory Analytics Dashboard](https://irdazh.github.io/posts/inventory-analytics-dashboard/)
 
