@@ -29,7 +29,7 @@ And in case of getting curious, check
 [these certifications](https://irdazh.github.io/posts/certifications/)
 as well!
 
-<hr style="border: 2px solid black;">
+<hr style="border: 1px solid black;">
 
 Here we go.
 
