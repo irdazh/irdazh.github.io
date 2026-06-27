@@ -2,13 +2,14 @@
 layout: post
 title: Photography Chatbot AI
 categories:
-- DS Projects
+- Automation
 tags:
 - backend
 - streamlit
 - chatbot
 - ai
 - fastapi
+- automation
 description: Experiment on making an AI Chatbot using FastAPI combined with Groq service
   and deployed via Hugging Face space.
 media_subpath: "/assets/img/chatbot"
