@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Another Automation I
+title: Another Automation 1
 categories:
 - Automation
 tags:
-- backend
 - automation
-- AI
-- Gemini
+- Python
+- Colab
 description: 
 media_subpath: "/assets/img/automation"
-date: 2026-06-25 00:00 +0000
+date: 2026-07-15 00:00 +0000
 ---
 <!-- 
 
@@ -29,7 +28,7 @@ I didn't make any GitHub repo. At least not in my own, personal repository. Shal
 
 The company isn't well known. The salary? Oh well, it's much lower than I expected, but now, I even questioning my competencies and capabilites, LOL. Am I that bad?
 
-Therefore, I didn't bring it up to friends I had in college. Not that many people know I'm here. Geez, I can't brag this thing up, okay? So that's why, I'm staying under radar right now. To be honest, I wanna meet them. Hearing them talking about whatever that is. However, on the other side, I can't bring myself up. I hate to say this, but I envy them, I can't deny this feeling. It's so overwhelming. I'm indeed pitiful, but at the same time, I don't want them to pity me. 
+Therefore, I don't bring it up to friends I had in college. Not that many people know I'm here. Geez, I can't brag this thing up, okay? So that's why, I'm staying under radar right now. To be honest, I wanna meet them. Hearing them talking about whatever that is. However, on the other side, I can't show myself up just yet. I hate to say this, but I envy them, I can't deny this feeling. It's so overwhelming. I'm indeed pitiful, but at the same time, I don't want them to pity me. 
 
 Ego, that's it. 
 
