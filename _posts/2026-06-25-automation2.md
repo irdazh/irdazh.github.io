@@ -8,7 +8,7 @@ tags:
 - automation
 - AI
 - Gemini
-description: 
+description: Feed a research paper to AI, and let it digest it? Wha, what a moron.  
 media_subpath: "/assets/img/research"
 date: 2026-06-25 00:00 +0000
 ---
