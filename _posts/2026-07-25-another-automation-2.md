@@ -6,7 +6,7 @@ categories:
 tags:
 - automation
 - AI
-description: 
+description: AI automation project for staff QA. 
 media_subpath: "/assets/img/automation"
 date: 2026-07-25 00:00 +0000
 ---
@@ -79,7 +79,7 @@ I love working with this project. Thanks for mas parter, whom I should report to
 
 Oh, there are actually two more dimensions. If the 4 previous dimensions measuring the overall conversation hygiene advisors must have, these 2 next dimensions measuring their sales skills. These two dimensions don't always exist for each conversation, making it harder to actually classify and also measure the error.
 
-So, even I don't convinced enough with my own method. I just served it along with the other dimensions, came to the users face, and said: use it, or leave it, it's all up to you!
+So, even I am not convinced enough with my own method. I just served it along with the other dimensions, came to the users face, and said: use it, or leave it, it's all up to you!
 
 Nah, that definitely didn't happen. But, oh, well, they used as a prescreening, uhm, perhaps (?)
 

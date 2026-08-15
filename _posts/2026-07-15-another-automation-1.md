@@ -7,7 +7,7 @@ tags:
 - automation
 - Python
 - Colab
-description: 
+description: Automation project for staff QA. 
 media_subpath: "/assets/img/automation"
 date: 2026-07-15 00:00 +0000
 ---
