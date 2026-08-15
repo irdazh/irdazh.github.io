@@ -77,5 +77,12 @@ Idem with previous project. Yeah, write the result directly to the target sheet.
  
 I love working with this project. Thanks for mas parter, whom I should report to, for filtering and handing me the right project. I made a huge modification through several iterations, discussed a bit with QA team, and now (uhm, around one month after this back-date post-date), I'm finishing thing up.
 
-Until next time, I guess. *Oh gosh, I still have to write another 3 posts.*
+Oh, there are actually two more dimensions. If the 4 previous dimensions measuring the overall conversation hygiene advisors must have, these 2 next dimensions measuring their sales skills. These two dimensions don't always exist for each conversation, making it harder to actually classify and also measure the error.
+
+So, even I don't convinced enough with my own method. I just served it along with the other dimensions, came to the users face, and said: use it, or leave it, it's all up to you!
+
+Nah, that definitely didn't happen. But, oh, well, they used as a prescreening, uhm, perhaps (?)
+
+Until next time. *Oh gosh, I still have to write another 3 posts.*
+
 
