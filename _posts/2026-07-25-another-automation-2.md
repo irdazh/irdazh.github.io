@@ -81,7 +81,11 @@ Oh, there are actually two more dimensions. If the 4 previous dimensions measuri
 
 So, even I am not convinced enough with my own method. I just served it along with the other dimensions, came to the users face, and said: use it, or leave it, it's all up to you!
 
-Nah, that definitely didn't happen. But, oh, well, they used as a prescreening, uhm, perhaps (?)
+Nah, that definitely didn't happen. But, oh, well, they used it as a prescreening tool, uhm, perhaps (?)
+
+Update: they used it as a prescreening tool, found lots of error for 200ish samples: the accuracy was only around 40%, wkwkkw, crying. Well, wasn't a really wise move, they still implemented and used the non-samples result tho.... Yeah, I hope it won't backfire them in the meantime.... 
+
+Who's the culprit: that's me.
 
 Until next time. *Oh gosh, I still have to write another 3 posts.*
 
