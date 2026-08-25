@@ -24,7 +24,7 @@ LinkedIn
 
 ## Chatter
 
-I didn't make any GitHub repo. At least not in my own, personal repository. Shall we talk about how things have been recently? I got my second job. It's in the business and economical thingies (?) in Indonesia. As you might guess it: Jakarta!
+I didn't make any GitHub repo. At least not in my own, personal repository. Shall we talk about how things have been recently? I got my second job. It's in the business and economical (?) area in Indonesia. As you might guess it: Jakarta!
 
 The company isn't well known. The salary? Oh well, it's much lower than I expected, but now, I even questioning my competencies and capabilites, LOL. Am I that bad?
 

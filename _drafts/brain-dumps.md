@@ -15,5 +15,6 @@ What do I expect? Salary increase? That seems very unlikely. Therefore, I'm read
 5. End of contract. Then out.
 
 Anyway, that's the plan. Then what? 
-1. Not sure what to do, but let's see what can we do in this hell hole? 
-2. Oh my. Creating another BS? Skuy. 
+1. Website
+2. Dashboard Compliance
+3. SS Automation
