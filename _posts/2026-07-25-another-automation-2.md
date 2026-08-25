@@ -6,7 +6,7 @@ categories:
 tags:
 - automation
 - AI
-description: AI automation project for staff QA. 
+description: AI automation project for staff QA, part 2.
 media_subpath: "/assets/img/automation"
 date: 2026-07-25 00:00 +0000
 ---
