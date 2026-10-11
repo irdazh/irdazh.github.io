@@ -24,7 +24,7 @@ LinkedIn
 
 ## Chatter
 
-Based on the contract, it's my last month in this company. The company and I haven't talked about contract renewal. Well, truths be told, I'm not really in the mood of discussing that thing, since I overheard one talking about not being able to increase its salary.  
+**Used to contain some chatters*.
 
 So, I guess, I have to execute the exit plan, now? Haha.
 
@@ -54,7 +54,6 @@ Well, I did use colab for creating a pilot project, where I could draft and expe
 Although the setting was pretty confusing at first, but of course, I could handle it just well. 
 
 ## Deployment
-Was it deployed?
 
 As I stated earlier, the automation itself was run using GitHub Actions. It read the data from several sources (although now, it only reads from one source), cleaned, transformed, and merged the data, before writing them into a single, compiled result.
 
@@ -67,6 +66,9 @@ Now, thinking about it again, my approach is kinda dumb in a way. There are lots
 Yeah, I still view an LLM as a single, kinda pro, assistant. I haven't changed the way I worked with it, which is by now, is kinda concerning. Anyway, the anxiety sure is for later.
 
 With that in mind. I have found a dumb way when debugging the code, especially when we aren't that pro: do trial and error in colab and use the clean, refactored code in the GitHub python file. 
+
+**Actually, screw this guide, we could've just AI to rewrite everything for us. Yeah, I'm getting more and more useless each passing days.* 
+
 1. Depends on the error, we might be able to solve it directly in the GitHub, without having to actually break the code apart. Especially when it's related with api connection error or missing library, or some obvious error. 
 2. As for a more complicated error, we might have to copy the code back to the colab. 
 3. Modify the auth & configuration part: since they might differ a lot between Colab and GitHub environment. 

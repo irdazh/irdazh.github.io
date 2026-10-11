@@ -18,3 +18,5 @@ Anyway, that's the plan. Then what?
 1. Website
 2. Dashboard Compliance
 3. SS Automation
+4. Otoke yo? 
+5. Idk dude, hahaha? Are we going to keep filling this thing on and on?
